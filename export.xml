@@ -1,0 +1,1196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Options SYSTEM "http://www.slickedit.com/dtd/vse/14.0/options.dtd">
+<Options Version="1.0" SlickEditVersion="23.0.1.2" Platform="LINUX">
+	<OptionsTree Caption="All Options" SystemHelp="Options Dialog" DialogHelp="The options allow you to customize SlickEdit.  Use 'Options History' to review options you have changed.  Use 'Import/Export Options' to back up or transfer settings.">
+		<Category Caption="Languages" Picture="languages.png" SystemHelp="Language Options" DialogHelp="Many features in SlickEdit can be configured on a language-specific basis, for example, indenting and word wrap styles. Use Language options to control the behavior of SlickEdit when you need to work with multiple languages.">
+			<Category Caption="User-Defined Languages" SystemHelp="" DialogHelp="">
+				<Category Language="idris" SystemHelp="Language Options" Name="DefaultLanguageInfo">
+					<Dialog Caption="General" Picture="languages.png" DialogTemplate="language_setup_general">
+						<Property PropertyTemplate="LangModeName" ActualValue="Idris"/>
+						<Property PropertyTemplate="LangKeyTableProfile" ActualValue="idris-keys&lt;profile n=&quot;eventtab_profiles.idris&quot; version=&quot;1&quot;&gt;
+	&lt;p n=&quot;' '&quot; v=&quot;ext-space&quot;/&gt;
+	&lt;p n=&quot;'('&quot; v=&quot;auto-functionhelp-key&quot;/&gt;
+&lt;/profile&gt;
+"/>
+						<Property PropertyTemplate="LangAssociatedExtensions" ActualValue="idr"/>
+						<Property PropertyTemplate="LangReferencedInLanguages" ActualValue=""/>
+						<Property PropertyTemplate="LangTruncation" ActualValue="0"/>
+						<Property PropertyTemplate="LangMenuIfNoSelection" ActualValue="_ext_menu_default"/>
+						<Property PropertyTemplate="LangMenuIfSelection" ActualValue="_ext_menu_default_sel"/>
+						<Property PropertyTemplate="LangAutoCaps" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangInsertRealIndent" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangBackspaceAtBeginning" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangBeginEndPairs" ActualValue=""/>
+						<Property PropertyTemplate="LangWordChars" ActualValue="A-Za-z0-9_$"/>
+						<Property PropertyTemplate="LangIndentStyle" ActualValue="1" DisplayValue="Auto"/>
+						<Property PropertyTemplate="LangDiffColumns" ActualValue="Off ( )"/>
+					</Dialog>
+					<Dialog Caption="View" Picture="appearance.png" DialogTemplate="language_setup_view">
+						<Property PropertyTemplate="LangPositionalKeywords" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangModifiedLines" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangCurrentLine" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangHexView" ActualValue="0" DisplayValue="None"/>
+						<Property PropertyTemplate="LangShowMinimap" ActualValue="False" DisplayValue="Off"/>
+						<PropertyGroup Caption="Special Characters">
+							<Property PropertyTemplate="LangViewTabs" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangViewSpaces" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangViewNewlines" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangViewCtrlChars" ActualValue="True" DisplayValue="On"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Line Numbers">
+							<Property PropertyTemplate="LangLineNumbersOn" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangLineNumbersLength" ActualValue="1"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Symbol coloring">
+							<Property PropertyTemplate="LangEnableSymbolColoring" ActualValue="False" DisplayValue="Off"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Selective Display on file open">
+							<Property PropertyTemplate="LangSelDispOutline" ActualValue="0" DisplayValue="Do not create file outline"/>
+							<Property PropertyTemplate="LangSelDispDocComments" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangSelDispOtherComments" ActualValue="False" DisplayValue="Off"/>
+						</PropertyGroup>
+					</Dialog>
+					<Dialog Caption="Formatting" Picture="formatting.png" DialogTemplate="language_setup_formatting">
+						<Property PropertyTemplate="LangSyntaxIndent" ActualValue="2"/>
+						<Property PropertyTemplate="LangTabs" ActualValue="+2"/>
+						<Property PropertyTemplate="LangIndentWithTabs" ActualValue="False" DisplayValue="Off"/>
+					</Dialog>
+					<Dialog Caption="Adaptive Formatting" Picture="adaptive.png" DialogTemplate="language_setup_adaptive_formatting">
+						<Property PropertyTemplate="LangUseAdaptiveFormatting" ActualValue="False" DisplayValue="Off"/>
+					</Dialog>
+					<Dialog Caption="Comments" Picture="comments.png" DialogTemplate="language_setup_comments">
+						<PropertyGroup Caption="Comment block">
+							<Property PropertyTemplate="LanguageCommentsFirstLineIsTop" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LanguageCommentsLastLineIsBottom" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LanguageCommentsTLC" ActualValue="{-"/>
+							<Property PropertyTemplate="LanguageCommentsTRC" ActualValue=""/>
+							<Property PropertyTemplate="LanguageCommentsLSide" ActualValue=""/>
+							<Property PropertyTemplate="LanguageCommentsRSide" ActualValue=""/>
+							<Property PropertyTemplate="LanguageCommentsBLC" ActualValue="-}"/>
+							<Property PropertyTemplate="LanguageCommentsBRC" ActualValue=""/>
+							<Property PropertyTemplate="LanguageCommentsAutoCloseBlockComments" ActualValue="True" DisplayValue="On"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Comment line">
+							<Property PropertyTemplate="LanguageCommentsLeftLineComment" ActualValue="--"/>
+							<Property PropertyTemplate="LanguageCommentsRightLineComment" ActualValue=""/>
+							<Property PropertyTemplate="LanguageCommentsLineCommentLocation" ActualValue="0" DisplayValue="At left margin"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Comment editing">
+							<Property PropertyTemplate="LanguageCommentsSplitLineComments" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LanguageCommentsExtendLineComments" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LanguageCommentsJoinComments" ActualValue="True" DisplayValue="On"/>
+						</PropertyGroup>
+					</Dialog>
+					<Dialog Caption="Word Wrap" Picture="textwrap.png" DialogTemplate="language_setup_word_wrap">
+						<Property PropertyTemplate="LanguageWordWrap" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LanguagePartialWordWrap" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LanguageMargins" ActualValue="False" DisplayValue="Fixed left column"/>
+						<Property PropertyTemplate="LanguageLeftMargin" ActualValue="1"/>
+						<Property PropertyTemplate="LanguageRightMargin" ActualValue="74"/>
+						<Property PropertyTemplate="LanguageNewParagraph" ActualValue="1"/>
+						<Property PropertyTemplate="LanguageJustifyStyle" ActualValue="1" DisplayValue="Left and respace"/>
+						<Property PropertyTemplate="LanguageOneSpaceAfterPeriod" ActualValue="True" DisplayValue="On"/>
+						<Property PropertyTemplate="LanguageEnableSoftWrap" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LanguageBreakOnWordBoundary" ActualValue="True" DisplayValue="On"/>
+					</Dialog>
+					<Dialog Caption="Aliases" Picture="aliases.png" DialogTemplate="alias_editor" ImportArguments="expand=1"/>
+					<Dialog Caption="Auto-Complete" Picture="lightbulb.png" DialogTemplate="language_setup_auto_complete">
+						<PropertyGroup Caption="Auto-completion">
+							<Property PropertyTemplate="LangACEnableAutoCompletion" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangACSyntaxExpansion" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangACAliasExpansion" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangACKeywords" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangACWordCompletion" ActualValue="True" DisplayValue="On"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Visual details">
+							<Property PropertyTemplate="LangShowLightBulb" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowExpandedText" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowListOfMatches" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowIcons" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowCategories" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowParameters" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowSymbolDeclaration" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangShowComments" ActualValue="True" DisplayValue="On"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Syntax Expansion">
+							<Property PropertyTemplate="LangSyntaxExpansion" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangMinimumExpandable" ActualValue="1"/>
+							<Property PropertyTemplate="LangInsertBracesImmediately" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangUseDynamicSurround" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangExpandAliasOnSpace" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangInsertBlankLineBetweenBraces" ActualValue="False" DisplayValue="Off"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Auto-Complete Options">
+							<Property PropertyTemplate="LangTabInsertsLongestUnique" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangTabCyclesThroughChoices" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangEnterAlwaysInserts" ActualValue="True" DisplayValue="On"/>
+							<Property PropertyTemplate="LangLMUseStrictCaseSensitivity" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangMinimumPrefixLength" ActualValue="1"/>
+							<Property PropertyTemplate="LangCompletionChoice" ActualValue="33554432" DisplayValue="Manually choose completion"/>
+						</PropertyGroup>
+					</Dialog>
+					<Dialog Caption="Auto-Close" Picture="stapler.png" DialogTemplate="language_setup_auto_bracket">
+						<Property PropertyTemplate="LangABEnable" ActualValue="False" DisplayValue="Off"/>
+					</Dialog>
+					<Dialog Caption="Auto-Surround" Picture="press.png" DialogTemplate="language_setup_auto_surround">
+						<Property PropertyTemplate="LangASEnable" ActualValue="True" DisplayValue="On"/>
+						<Property PropertyTemplate="LangASParen" ActualValue="True" DisplayValue="On"/>
+						<Property PropertyTemplate="LangASBracket" ActualValue="True" DisplayValue="On"/>
+						<Property PropertyTemplate="LangASAngle" ActualValue="False" DisplayValue="Off"/>
+						<Property PropertyTemplate="LangASDoubleQuote" ActualValue="True" DisplayValue="On"/>
+						<Property PropertyTemplate="LangASSingleQuote" ActualValue="True" DisplayValue="On"/>
+						<Property PropertyTemplate="LangASBrace" ActualValue="True" DisplayValue="On"/>
+					</Dialog>
+					<Dialog Caption="Color Coding" Picture="langcolor.png" DialogTemplate="lexer_editor" Shared="True" ImportFiles="colorcoding_profiles.Idris.cfg.xml" ImportArguments="Idris"/>
+					<PropertySheet Caption="File Options" Picture="folder.png" SystemHelp="File Options (Language-Specific)">
+						<PropertyGroup Caption="Load Options">
+							<Property PropertyTemplate="LangLOLoadAsBinary" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangLOExpandTabsToSpaces" ActualValue="-1" DisplayValue="Default"/>
+						</PropertyGroup>
+						<PropertyGroup Caption="Save Options">
+							<Property PropertyTemplate="LangSOLoadAsBinary" ActualValue="False" DisplayValue="Off"/>
+							<Property PropertyTemplate="LangSOExpandTabsToSpaces" ActualValue="-1" DisplayValue="Default"/>
+							<Property PropertyTemplate="LangSOStripTrailing" ActualValue="-1" DisplayValue="Default"/>
+							<Property PropertyTemplate="LangSOSEOLFormat" ActualValue="A" DisplayValue="Automatic"/>
+						</PropertyGroup>
+					</PropertySheet>
+				</Category>
+			</Category>
+		</Category>
+	</OptionsTree>
+	<DialogTemplates>
+		<DialogTemplate Name="language_setup_general" Picture="languages.png" Form="_language_general_form" InheritsFromForm="_language_form" SystemHelp="General Options (Language-Specific)" DialogHelp="Use this page to set various general language-specific options and to see the file extensions associated with the language. The settings on this page depend on the selected language." Tags="alias always associations at auto backspace beautify begin beginning blanks bounds caps chars check choose columns context cycles diff drag drop edit elements empty end expansions extensionless extensions file files general if indent indents insert key language languages leading length line lines map menu menus mode name names never no off on pairs paste real referenced reindent reindents selection slickedit smartpaste spell start strict style syntax tab these truncation typing un use while word"/>
+		<DialogTemplate Name="language_setup_view" Picture="appearance.png" Form="_language_view_form" InheritsFromForm="_language_form" SystemHelp="View Options (Language-Specific)" DialogHelp="These options control the display of special characters and line numbers, and let you enable Hex Mode Editing on a language-specific basis. Many of these options can be toggled on/off individually on a per-document basis using the View menu items." Tags="bold bytes characters color coloring column columns comments configure control create current declarations definitions display do documentation file for hex hide highlight keywords level line lines lookup minimap minimum modified names newline not number numbers on open other outline per positional rules select selective show spaces special statement symbol symbols tabs unidentified use view width"/>
+		<DialogTemplate Name="language_setup_adaptive_formatting" Picture="adaptive.png" Form="_language_adaptive_formatting_form" InheritsFromForm="_language_form" Exclusions="isLangAdaptiveFormattingExcludedForMode" SystemHelp="Adaptive Formatting Options (Language-Specific)" DialogHelp="Adaptive Formatting scans a file for the formatting styles in use, and automatically matches those settings for the current editing session. This page lets you enable Adaptive Formatting and specify which formatting styles to scan for." ManualTags="casing brace" Tags="_language_adaptive_formatting_form adaptive attributes before begin between brace case casing end for formatting hex indent insert inserted keyword no padding parentheses parenthesis single space style switch syntax tabs tags use values word"/>
+		<DialogTemplate Name="language_setup_formatting" Picture="formatting.png" Form="_language_formatting_form" InheritsFromForm="_language_form" SystemHelp="Formatting Options (Language-Specific)" DialogHelp="" Tags="*ALL_LANGUAGES* adaptive as attributes auto before begin between brace capitalize case continuation else end for formatting function hex if indent insert inserted keyword line lowercase no none on one padding parameters parentheses parenthesis place quick same single space statements style switch symbol syntax tabs tags translation unbrace uppercase use values word"/>
+		<DialogTemplate Name="language_setup_comments" Picture="commetns.png" Form="_language_comments_form" InheritsFromForm="_language_form" SystemHelp="Comment Options (Language-Specific)" DialogHelp="This page lets you control how block and line comments are created. Document &gt; Comment Block and Document &gt; Comment Lines use the comment style and options specified here to comment out all text on the lines containing the selection. You can also control the behavior of doc comments and comment/string editing." ManualTags="characters" Tags="affects all at automatically block border bottom characters close column comment comments creation doc documentation edit editing enter expand expansion extend first indent join joining languages last leading left level line lines location margin on right split start string strings style top xmldoc"/>
+		<DialogTemplate Name="language_setup_comment_wrap" Picture="commentwrap.png" Form="_language_comment_wrap_form" InheritsFromForm="_language_form" Exclusions="isLangCommentWrapFormExcludedForMode" SystemHelp="Comment Wrap Options (Language-Specific)" DialogHelp="Comment Wrap options let you activate wrapping and configure the way block, line, and doc comments are wrapped." Tags="automatic block bullet column comment comments continue doc enable enter existing fixed hanging indent javadoc line list margin maximum on preserve right start sync tag use vertical width wrap wrapping"/>
+		<DialogTemplate Name="language_setup_word_wrap" Picture="wordwrap.png" Form="_language_word_wrap_form" InheritsFromForm="_language_form" SystemHelp="Word Wrap Options (Language-Specific)" DialogHelp="These language-specific options control Word Wrap, which keeps the cursor within the specified margins when entering text, moving the cursor, and deleting characters." Tags="after automatic blank boundary break column enable first fixed justified justify left margin margins new non on paragraph partial period respace right soft space style typing width word wrap"/>
+		<DialogTemplate Name="language_setup_auto_complete" Picture="lightbulb.png" Form="_language_auto_complete_form" InheritsFromForm="_language_form" SystemHelp="Auto-Complete Options (Language-Specific)" DialogHelp="Auto-Complete is a feature that offers suggestions for the automatic completion of syntax, keywords, symbols, and lines of code. These options let you enable Auto-Complete, select the items for which you want to see completion choices, and specify the behavior of the feature in general." Tags="after alias aliases always argument auto auto-complete begin between blank block braces bulb case categories choice choices class comments compatible complete completion current cursor cycles declaration details dynamic enable end enter expand expandable expanded expansion file files for functions icons identifier immediately include insert inserts item keyword keywords length light line list locals longest matches members minimum on open options parameters parenthesis prefix preserve right rules sensitivity show space strict surround symbol symbols syntax tab text through typing unique use values visual word"/>
+		<DialogTemplate Name="language_setup_auto_bracket" Picture="stapler.png" Form="_language_auto_bracket_form" InheritsFromForm="_language_form" SystemHelp="Auto-Close Options (Language-Specific)" DialogHelp="Auto-Close automatically inserts the closing punctuation for bracketed and quotation punctuation pairs, with option to automatically insert padding inside the automatically insert punctuation." Tags="after angle auto auto-close automatic blank block brace bracket close closing comments completion configure double enable enter insert line next on padding parenthesis put quick quote same single statements tab unbrace"/>
+		<DialogTemplate Name="language_setup_auto_surround" Picture="press.png" Form="_language_auto_surround_form" InheritsFromForm="_language_form" SystemHelp="Auto-Surround Options (Language-Specific)" DialogHelp="Auto-Surround surrounds current selection with typed bracketed and quotation punctuation pairs." Tags="angle auto auto-surround brace bracket double enable parenthesis quote single surround"/>
+		<DialogTemplate Name="language_setup_context_tagging" Picture="tagging.png" Form="_language_tagging_form" InheritsFromForm="_language_form" Exclusions="isLangTaggingFormExcludedForMode, !PRO_CT" SystemHelp="Context Tagging Options (Language-Specific)" DialogHelp="These options let you configure the language-specific settings for Context Tagging,  a feature set that performs expression type, scope, and inheritance analysis as well as symbol look-up within the current context to help you navigate and write code. Global tagging options are located at Tools &gt; Options &gt; Editing &gt; Context Tagging®." ManualTags="sensitive" Tags="after attempt auto before case choices class comma comments compatible completing completion configure context current cursor declarations definition defs display evaluate expensive filter for forward function go highlight highlighting identifiers ignore info information insert keyword list matching members mouse multiple navigation non out overloads pad parameter parameters parentheses preview prioritize project required return rules sensitive sensitivity show slow space statements strict symbol symbols tagging there tool type under use window"/>
+		<DialogTemplate Name="language_setup_tag_files" Picture="tag_files.png" Form="_tag_form" Exclusions="!PRO_BUILD" InheritsFromForm="_language_form" SystemHelp="Tag Files (Language-Specific)" DialogHelp="Allows you to add, remove, update, and rebuild language-specific tag files. These tag files are accessible from any code written in the same language.  You should create a language-specific tag file for any library that is not a compiler-specific library or part of the codebase you are editing.  For example, you may have third-party libraries that are reused from project to project." Tags="context done file files list no selected tag tagging®"/>
+		<DialogTemplate Name="alias_editor" Picture="aliases.png" Form="_alias_editor_form" Exclusions="isLangAliasesFormExcludedForMode" SystemHelp="Alias Options (Language-Specific)" DialogHelp="Aliases are identifiers that you can quickly type, which are then expanded into snippets of text. Language-specific aliases are useful for inserting comment headers, statement and function templates, or any other text that you frequently use. To create a new alias, click &lt;b&gt;New&lt;/b&gt; and enter the identifier you want to use. Then in the alias editor box, type the substitution text, then click &lt;b&gt;Apply&lt;/b&gt;. To use the alias in a file, type the identifier and press Ctrl+Space." Tags="alias definition editor escape insert parameters sequence"/>
+		<DialogTemplate Name="single_file_projects" Picture="gear.png" Form="_file_project_profiles_form" Exclusions="isLangSingleFileProjectsmExcludedForMode, !PRO_BUILD" SystemHelp="Configuring Single File Project Profiles" DialogHelp="Single file projects allow you to run, compile, and debug the current file without creating a workspace and project first. This does not apply when you have a project open" Tags="default delete edit file new profiles project set single"/>
+		<DialogTemplate Name="lexer_editor" Picture="colors.png" Form="_cc_form" Exclusions="isLangColorCodingFormExcludedForMode" SystemHelp="Color Coding Options (Language-Specific)" DialogHelp="Color Coding is a feature that displays various portions of code in color for identification purposes. Use these options to configure Color Coding for languages that support it." Tags="add affh after all allow allowed anywhere appear apply assembly at attribute attributes base basic beginning blank but can case char character characters check cobol code coding color coloring colors column comment consecutive continuation cpp cppeof data decimal delete delimiter digit digits doc document documentation dont doubles doxygen eg embedded enables end eof escape everything ex exponenet exponent first float floating follow followed function general here hex hexadecimal hffff hlasm ibm id identifiers if import inactive inherit integer integers item javadoc keywords language line literals llist match matches may member model more multi names nest nesting new no non not number numbers octal on one only order other package point possible prefix preprocessing profile quote quotes regions represent same schema sensitive separator settings setup shells single special specific start statements style sub suffixes supported tag tags text token tokens treat two type unix use used valid values vb word words xa xafpef xff xp">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_LOAD_USER_LEXER_FILE" OptionsTreeType="OP_IMPORT"/>
+			</ChangeEvents>
+		</DialogTemplate>
+		<DialogTemplate Name="c_preprocessing" Picture="preprocessing.png" Form="_c_ppedit_form" SystemHelp="C/C++ preprocessing" DialogHelp="For performance considerations, Context Tagging® does not do full preprocessing, so macros that interfere with normal C++ syntax can cause the parser to miss symbols. To prevent this, use this page to add the necessary preprocessing macros. Arguments are allowed, for example: mymacro(a,b,c)  You can add large numbers of #defines directly to the usercpp.h file located in the user config directory." ManualTags="preprocessing define undef"/>
+		<DialogTemplate Name="verilog_preprocessing" Picture="preprocessing.png" Form="_c_ppedit_form" SystemHelp="Verilog preprocessing" DialogHelp="For performance considerations, Context Tagging® does not do full preprocessing, so macros that interfere with normal Verilog syntax can cause the parser to miss symbols. To prevent this, use this page to add the necessary preprocessing macros. Arguments are allowed, for example: mymacro(a,b,c)  You can add large numbers of `defines directly to the header file located in the user config directory." ManualTags="preprocessing define undef"/>
+		<DialogTemplate Name="version_control_commands" Picture="console.png" Form="_vc_setup2_form" TagComplexControls="list1" SystemHelp="Version Control Command Setup Dialog Box" DialogHelp="This dialog allows you to specify the commands and arguments used to run Version Control commands." Tags="add checkin checkout command commands control difference get history lock manager properties remove unlock version"/>
+		<DialogTemplate Name="_ml_setup_beautifier" Picture="formatting.png" Exclusions="!PRO_BEAUT" Form="_new_beautifier_config" SystemHelp="HTML Formatting Options" DialogHelp="These language-specific options let you configure the way SlickEdit formats code as you type. Depending on the language, you can specify the code formatting templates, how various syntatical elements are treated, when and what code elements are automatically inserted, and more.  You can also apply these formatting settings to any file by going to Tools > Beautify." ManualTags="k&amp;r beautify" Tags="auto beautify code copy delete edit file form2 k&amp;r load on open preview profile reset symbol translation translations validate"/>
+		<DialogTemplate Name="_ml_setup_standard" Picture="formatting.png" Exclusions="PRO_BEAUT" Form="_html_standard_format" SystemHelp="HTML and XML Formatting Options Standard Edition" DialogHelp="These language-specific options let you configure the way SlickEdit formats code as you type for HTML or XML languages." Tags="after all allowed attribute auto beautifier beautify before breaks case child content each edit end for general hex html indent length level line max number on open original parent position preserve quote quoting required reset restrict save selected selection settings size style symbol syntax tab tabs tag tags text translation translations validate value values within word wrap"/>
+		<DialogTemplate Name="_language_setup_beautifier" Picture="formatting.png" Exclusions="!PRO_BEAUT" Form="_new_beautifier_config" SystemHelp="C/C++ beautifier" DialogHelp="These language-specific options let you configure the way SlickEdit formats code as you type. Depending on the language, you can specify the code formatting templates, how various syntatical elements are treated, when and what code elements are automatically inserted, and more.  You can also apply these formatting settings to any file by going to Tools > Beautify." ManualTags="k&amp;r beautify" Tags="auto beautify code copy delete edit file form2 k&amp;r load on open preview profile reset symbol translation translations validate"/>
+		<DialogTemplate Name="_language_setup_standard" Picture="formatting.png" Exclusions="PRO_BEAUT" Form="_language_settings_standard" SystemHelp="Common Formatting Options for Brace-style Languages" DialogHelp="These language-specific options let you configure the way SlickEdit formats code as you type. Depending on the language, you can specify the code formatting templates, how various syntatical elements are treated, when and what code elements are automatically inserted, and more." ManualTags="k&amp;r beautify" Tags="adaptive alignment as auto beautify before begin between brace capitalize case code else end first formatting function if indent insert k&amp;r keywords level line lowercase none on one options padding parameter parentheses parenthesis place quick same space statements style switch syntax tabs unbrace uppercase"/>
+	</DialogTemplates>
+	<PropertyTemplates>
+		<!--    General -->
+		<TextTemplate Name="LangModeName" Caption="Mode name" LanguageSetting="ModeName" Controls="label1, _mode_name" DialogHelp="Allows you to enter a more meaningful name for this language setup."/>
+		<TextTemplate Name="LangKeyTableProfile" Caption="Key table name" Function="_lang_key_table_profile"/>
+		<TextTemplate Name="LangAssociatedExtensions" Caption="Associated extensions" Function="_lang_file_extensions" Controls="ctllabel14,_file_extensions_lbl,_ctl_edit" DialogHelp="A list of file extensions associated with this language."/>
+		<TextTemplate Name="LangReferencedInLanguages" Caption="Referenced in" Function="_lang_referenced_in_langs" Controls="ctllabel15,_mixed_languages_label,_ctl_edit_languages" DialogHelp="A list of languages which may contain code which can reference symbols in this language."/>
+		<NumericTemplate Name="LangTruncation" Caption="Truncation" LanguageSetting="TruncateLength" Type="int" Min="1" Max="-1" Controls="ctlTruncationFrame, ctlTruncateLengthLab,ctlTruncateLength,ctlTruncOn,ctlTruncOff,ctlTruncAuto" DialogHelp="When On or Auto is selected, all editor operations prevent the data from the right of the truncation line length to be moved or modified. Set this to Auto for the editor to determine the truncation line length based on the record format of the file. For files that do not have a record format, the truncation length is turned off.    The truncation line is not displayed when using proportional fonts, as in Unicode files."/>
+		<BooleanTemplate Name="LangAutoCaps" Caption="Auto CAPS" LanguageSetting="Caps" Type="int" TrueValue="2" FalseValue="0" Controls="ctlcaps" DialogHelp="If selected, and a file is opened that does not contain any lowercase characters, caps mode is turned on (not the same as caps lock). When caps mode is on, all text is inserted in uppercase. This feature is intended to emulate ISPF."/>
+		<BooleanTemplate Name="LangBeautSyntax" Caption="Beautify syntax expansions" LanguageSetting="BeautifierExpansions" Flag="BEAUT_EXPAND_SYNTAX" Controls="_beaut_syntax" Exclusions="isNewBeautifierOptionExcludedForLanguage" DialogHelp="If selected, syntax expansions are run through the beautifier."/>
+		<BooleanTemplate Name="LangBeautAlias" Caption="Beautify alias expansions" LanguageSetting="BeautifierExpansions" Flag="BEAUT_EXPAND_ALIAS" Controls="_beaut_alias" Exclusions="isNewBeautifierOptionExcludedForLanguage" DialogHelp="If selected, alias expansions are run through the beautifier."/>
+		<BooleanTemplate Name="LangBeautEditing" Caption="Beautify while typing" LanguageSetting="BeautifierExpansions" Flag="BEAUT_EXPAND_ON_EDIT" Controls="_beaut_edit" Exclusions="isNewBeautifierOptionExcludedForLanguage" DialogHelp="If selected, text will be beautified as the user types it."/>
+		<BooleanTemplate Name="LangBeautPaste" Caption="Beautify on paste or drag and drop" LanguageSetting="BeautifierExpansions" Flag="BEAUT_EXPAND_PASTE" Controls="_beaut_paste" Exclusions="isNewBeautifierOptionExcludedForLanguage" DialogHelp="If selected, text will be beautified when code is pasted or dropped into the buffer."/>
+		<TextTemplate Name="LangBounds" Caption="Bounds" LanguageSetting="Bounds" Controls="ctlBoundsFrame, ctlBoundsStartLab,ctlBoundsStart,ctlBoundsEndLab,ctlBoundsEnd,ctlBoundsOn,ctlBoundsOff" DialogHelp="This setting controls column bounds for specific ISPF commands that operate on column ranges.  This setting is unique to the ISPF emulation.    The boundary lines are not displayed when using proportional fonts, as in Unicode files.">
+			<Dependencies Evaluate="All">
+				<Condition Variable="def_keys" Value="ispf-keys"/>
+			</Dependencies>
+		</TextTemplate>
+		<TextTemplate Name="LangDiffColumns" Caption="Diff columns" Function="_lang_diff_columns_property" Controls="ctlDiffColFrame,ctlDiffColOff,ctlDiffColOn,ctlDiffStartLab,ctlDiffStart,ctlDiffEndLab,ctlDiffEnd" DialogHelp="When On, diff will ignore changes outside the column range specified. This feature is designed for main frame languages like COBOL."/>
+		<SelectTemplate Name="LangMenuIfNoSelection" Caption="Menu if no selection" LanguageSetting="MenuIfNoSelection" Type="string" Choices="_lang_menu_get_menus" Controls="ctllabel2, _menu_list" DialogHelp="This specifies the menu that is displayed when right-clicking in an edit window that does not have a selection. "/>
+		<SelectTemplate Name="LangMenuIfSelection" Caption="Menu if selection" LanguageSetting="MenuIfSelection" Type="string" Choices="_lang_menu_get_menus" Controls="label3, _selection_menu_list" DialogHelp="This specifies the menu that is displayed when right-clicking in an edit window that has a selection."/>
+		<TextTemplate Name="LangBeginEndPairs" Caption="Begin/end pairs" LanguageSetting="BeginEndPairs" Controls="ctlBeginEndPairsLabel, _beginend_pairs" DialogHelp="Specify the begin/end pairs to use for the selected extension in a format similar to a regular expression.">
+			<Dependencies Evaluate="All">
+				<NotCondition LangCallback="_%s_find_matching_word"/>
+			</Dependencies>
+		</TextTemplate>
+		<TextTemplate Name="LangWordChars" Caption="Word chars" LanguageSetting="WordChars" Controls="ctlWordCharsLabel, _word_chars" DialogHelp='These are the characters that used to recognize a string of text as a word. The word characters affect the operation of all word-oriented commands, including word searching. You can use a dash (-) character to specify a range, such as "A-Z", which specifies uppercase letters. To specify the dash (-) character as a valid word character, place a dash at the beginning or end of the word character string.'/>
+		<!--   Indent -->
+		<SelectTemplate Name="LangIndentStyle" Caption="Indent style" LanguageSetting="IndentStyle" Type="int" Controls="_innone,_inauto,_insmart_on" DialogHelp="When None is selected, the Enter key will put the cursor at the beginning of the line.  When Auto is selected, the Enter key indents according to the previous line.  When Syntax Indent is selected, the Enter key indents according to language syntax. The Syntax Indent option specifies the amount to indent for each level. ">
+			<Choices>
+				<Choice Caption="None" Value="INDENT_NONE"/>
+				<Choice Caption="Auto" Value="INDENT_AUTO"/>
+				<Choice Caption="Syntax indent" Value="INDENT_SMART"/>
+			</Choices>
+		</SelectTemplate>
+		<NumericTemplate Name="LangSyntaxIndent" Caption="Syntax indent" LanguageSetting="SyntaxIndent" Type="int" Min="1" Max="10" Controls="_insmart,_insmart_spinner" DialogHelp="This option specifies the amount to indent for each level when the Indent Style is set to Syntax Indent."/>
+		<TextTemplate Name="LangTabs" Caption="Tabs" LanguageSetting="Tabs" Controls="label1,_tabs" DialogHelp="Set tabs in increments of a specific value or at specific column positions. "/>
+		<BooleanTemplate Name="LangIndentWithTabs" Caption="Indent with tabs" LanguageSetting="IndentWithTabs" Type="bool" Controls="_indent_with_tabs" DialogHelp="When On, the Tab key, Enter key, and paragraph reformat commands indent with tabs.  When Off, these operations indent with spaces. "/>
+		<BooleanTemplate Name="LangInsertRealIndent" Caption="Insert real indent" LanguageSetting="InsertRealIndent" Type="bool" Controls="ctlInsertRealIndent" DialogHelp="When this option is On, the Enter key inserts real spaces or tabs representing the indent instead of virtual spaces. This setting affects all extensions. This option allows the function for the End key on the keyboard to place the cursor after blank text where new text can be typed. "/>
+		<BooleanTemplate Name="LangBackspaceAtBeginning" Caption="Backspace at beginning of line un-indents" LanguageSetting="BackspaceUnindents" Type="bool" Controls="ctlBackspaceUnindent" DialogHelp="When this option is On and the cursor is located before the first non-blank character, pressing the Backspace key unindents the current line by one indent level.">
+			<Dependencies Evaluate="All">
+				<NotCondition LangInheritsFrom="fundamental"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangUseSmartPaste" Caption="Use SmartPaste" LanguageSetting="SmartPaste" Type="bool" Controls="_smartp" DialogHelp="Specifies whether copied or pasted text should be reindented according to what the editor thinks is the correct indent level.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_smartpaste_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangWhenTabKeyReindents" Caption="When tab key reindents the line" Function="_lang_smart_tab" Type="int" Controls="ctlIndent,ctlReindentAlways,ctlReindent" DialogHelp='This option controls when the Tab key is used to reindent the current line. When "Never" is selected, pressing Tab will never reindent the line. It will indent to the next tab stop. When "Always" is selected, pressing the Tab key in any column will reindent the current line.  When "In leading blanks" is selected, pressing the Tab key will reindent the line if the cursor is positioned within the leading white space of the line. Otherwise, it will indent to the next tab stop.'>
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_smart_tab_enabled"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Never" Value="VSSMARTTAB_INDENT"/>
+				<Choice Caption="Always" Value="VSSMARTTAB_ALWAYS_REINDENT"/>
+				<Choice Caption="In leading blanks" Value="VSSMARTTAB_MAYBE_REINDENT"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangStrict" Caption="Strict" Function="_lang_smart_tab_strict" Type="bool" Controls="ctlReindentStrict" DialogHelp="When this option is On, it reindents the line only if the cursor position is before the intended indent location; otherwise, it will insert an additional tab stop. When this option is Off, it reindents the line when the cursor is located on the leading whitespace, regardless of whether the column is before or after the intended indent location. ">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_smart_tab_enabled"/>
+				<Condition Option="When tab key reindents the line" Value="In leading blanks"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<!--    View -->
+		<BooleanTemplate Name="LangViewSpecialCharacters" Caption="Special Characters" LanguageSetting="ShowTabs" Flag="SHOWSPECIALCHARS_ALL" Controls="_ctl_special_chars" DialogHelp="This option enables display of all types of special characters.  This includes Tabs, Spaces, and Newline characters as well as all of the other special characters listed on the Appearance &gt; Special Characters options screen.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Special Characters" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangViewTabs" Caption="Tabs" LanguageSetting="ShowTabs" Flag="SHOWSPECIALCHARS_TABS" Controls="_ctl_tabs" DialogHelp="When set to On, Tab characters are displayed using the character specified on Appearance &gt; Special Characters.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Special Characters" Value="Off"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangViewSpaces" Caption="Spaces" LanguageSetting="ShowTabs" Flag="SHOWSPECIALCHARS_SPACES" Controls="_ctl_spaces" DialogHelp="When set to On, Spaces are displayed using the character specified on Appearance &gt; Special Characters.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Special Characters" Value="Off"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangViewNewlines" Caption="Newline characters" LanguageSetting="ShowTabs" Flag="SHOWSPECIALCHARS_NLCHARS" Controls="_ctl_newline" DialogHelp="When set to On, Newline characters are displayed using the character specified on Appearance &gt; Special Characters.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Special Characters" Value="Off"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangViewCtrlChars" Caption="Other control characters" LanguageSetting="ShowTabs" Flag="SHOWSPECIALCHARS_CTRL_CHARS" Controls="_ctl_ctrl_chars" DialogHelp="When set to On, other control characters are displayed using the character specified on Appearance &gt; Special Characters.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Special Characters" Value="Off"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPositionalKeywords" Caption="Color positional keywords" Flag="SYMBOL_COLOR_POSITIONAL_KEYWORDS" Exclusions="!PRO_CT" Controls="ctl_positional_keywords" Function="_lang_symbol_coloring_options" DialogHelp="Enable or disable coloring positional keywords for this language."/>
+		<BooleanTemplate Name="LangLineNumbersOn" Caption="Line numbers on" LanguageSetting="LineNumbersFlags" Flag="LNF_ON | LNF_AUTOMATIC" Controls="_ctl_line_numbers" DialogHelp="When this option is selected, display of line numbers is enabled for the selected language."/>
+		<NumericTemplate Name="LangLineNumbersLength" Caption="Line numbers length" LanguageSetting="LineNumbersLength" Type="int" Min="1" Max="10" Controls="_ctl_fixed_text,_ctl_auto_text,ctllabel2" DialogHelp="When Fixed with line numbers are used, this is the width set aside for line numbers.  When Automatic line numbers are used, this is the minimum amount of space to set aside for line numbers."/>
+		<BooleanTemplate Name="LangModifiedLines" Caption="Modified lines" LanguageSetting="ColorFlags" Flag="MODIFY_COLOR_FLAG" Controls="_modified_lines" DialogHelp="If selected, lines that have been modified are color coded."/>
+		<BooleanTemplate Name="LangCurrentLine" Caption="Current line" LanguageSetting="ColorFlags" Flag="CLINE_COLOR_FLAG" Controls="_current_line" DialogHelp="If selected, the current line is color coded. "/>
+		<BooleanTemplate Name="LangShowMinimap" Caption="Show minimap" LanguageSetting="ShowMinimap" Type="bool" Controls="_show_minimap" DialogHelp="If selected, the minimap window is displayed."/>
+		<SelectTemplate Name="LangHexView" Caption="Hex view" LanguageSetting="HexMode" Type="int" Controls="ctllabel1,_ctl_hex_combo" DialogHelp="This option is used to enable Hex mode editing (either Hex or Line hex).">
+			<Choices>
+				<Choice Caption="None" Value="0"/>
+				<Choice Caption="Hex" Value="1"/>
+				<Choice Caption="Line hex" Value="2"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangEnableSymbolColoring" Caption="Enable symbol coloring" BackwardsFlag="SYMBOL_COLOR_DISABLED" Exclusions="!PRO_CT" Controls="ctl_symbol_coloring" Function="_lang_symbol_coloring_options" DialogHelp="Enable or disable symbol coloring for this language."/>
+		<BooleanTemplate Name="LangUseBoldForSymbolNames" Caption="Use bold for symbol names in definitions and declarations" Flag="SYMBOL_COLOR_BOLD_DEFINITIONS" Exclusions="!PRO_CT" Controls="ctl_bold_symbols" Function="_lang_symbol_coloring_options" DialogHelp="When set to On, identifiers which are the name of a symbol in a definition or declaration will be highlighted in bold.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable symbol coloring" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangStrictSymbolLookups" Caption="Symbol lookup" Controls="ctl_strict_symbols" Exclusions="!PRO_CT" Function="_lang_symbol_coloring_options" Type="flag" DialogHelp="When set to use strict symbol looks, expect symbol coloring to look up all symbols by name following strict language rules.  When set to use relaxed symbol lookups, allow symbol coloring to look up any symbol by name without following strict language rules.  When set to use simplistic symbol lookups, allow symbol coloring to look up any symbol by name only, ignoring context and language rules.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable symbol coloring" Value="On"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Use strict symbol lookups (full symbol analysis)" Value="0"/>
+				<Choice Caption="Use relaxed symbol lookups (symbol analysis with relaxed rules)" Value="SYMBOL_COLOR_NO_STRICT_TAGGING"/>
+				<Choice Caption="Use fast, simplistic symbol lookups (symbol name only)" Value="SYMBOL_COLOR_SIMPLISTIC_TAGGING"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangDoNotHightlightUnidentified" Caption="Do not highlight unidentified symbols" Flag="SYMBOL_COLOR_SHOW_NO_ERRORS" Exclusions="!PRO_CT" Controls="ctl_no_symbol_errors" Function="_lang_symbol_coloring_options" DialogHelp="When set to On, identifiers which are not found by tagging will not be colored as unknown or error symbols.  This setting is recommended for languages that allow implicit declarations or dynamic typing, for example, where precise symbol analysis is made difficult due to the design of the language.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable symbol coloring" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangSelDispOutline" Caption="Create file outline" Controls="ctl_seldisp_symbol_outline,ctl_seldisp_statement_outline,ctl_seldisp_no_outline" LanguageSetting="SelectiveDisplayFlags" Type="flag" DialogHelp="When set to Symbol level, an outline of the file is created with the symbols being collapsed.  When set to Statement level, the outline is created all the way down to the statement level.  Select Do not create file outline to create no outline on file open.">
+			<Choices>
+				<Choice Caption="Symbol level" Value="SELDISP_SYMBOL_OUTLINE_ON_OPEN"/>
+				<Choice Caption="Statement level" Value="SELDISP_STATEMENT_OUTLINE_ON_OPEN"/>
+				<Choice Caption="Do not create file outline" Value="0"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangSelDispFuncDefs" Caption="Collapse function definitions on file open" Flag="COLLAPSE_FUNC_DEFS_ON_OPEN" Controls="ctl_seldisp_func_defs" LanguageSetting="SelectiveDisplayFlags" DialogHelp="Set this option to On to use Selective Display to collapse the function bodies in a file when it is opened."/>
+		<BooleanTemplate Name="LangSelDispFuncProtos" Caption="Collapse function prototypes on file open" Flag="COLLAPSE_FUNC_PROTOS_ON_OPEN" Controls="ctl_seldisp_func_protos" LanguageSetting="SelectiveDisplayFlags" DialogHelp="Set this option to On to use Selective Display to collapse the function prototypes in a file when it is opened."/>
+		<BooleanTemplate Name="LangSelDispDocComments" Caption="Hide doc comments" Flag="SELDISP_HIDE_DOC_COMMENTS_ON_OPEN" Controls="ctl_seldisp_doc_comments" LanguageSetting="SelectiveDisplayFlags" DialogHelp="Set this option to On to use Selective Display to collapse the documentation comments in a file when it is opened."/>
+		<BooleanTemplate Name="LangSelDispOtherComments" Caption="Hide other comments" Flag="SELDISP_HIDE_OTHER_COMMENTS_ON_OPEN" Controls="ctl_seldisp_other_comments" LanguageSetting="SelectiveDisplayFlags" DialogHelp="Set this option to On to use Selective Display to collapse the non-doc comments in a file when it is opened."/>
+		<!--    Adaptive Formatting -->
+		<BooleanTemplate Name="LangUseAdaptiveFormatting" Caption="Use Adaptive Formatting" LanguageSetting="UseAdaptiveFormatting" Type="bool" Controls="_cb_ad_form" DialogHelp="When set to On, then Adaptive Formatting is on for this language.  When set to Off, then no Adaptive Formatting actions are performed for this language."/>
+		<BooleanTemplate Name="LangAFSyntaxIndent" Caption="Syntax indent" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_SYNTAX_INDENT" Controls="_cb_syntax_indent" DialogHelp="When set to On, then the Syntax Indent setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_SYNTAX_INDENT"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFTabs" Caption="Tabs" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_TABS" Controls="_cb_tabs" DialogHelp="When set to On, then the Tabs setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_TABS"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFIndentWithTabs" Caption="Indent with tabs" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_INDENT_WITH_TABS" Controls="_cb_indent_with_tabs" DialogHelp="When set to On, then the Indent with Tabs setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_INDENT_WITH_TABS"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFKeywordCase" Caption="Keyword case" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_KEYWORD_CASING" Controls="_cb_keyword_casing" DialogHelp="When set to On, then the Keyword Case setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_KEYWORD_CASING"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFCaseForInsertedTags" Caption="Case for inserted tags" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_TAG_CASING" Controls="_cb_tag_casing" DialogHelp="When set to On, then the Case for Inserted Tags setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_TAG_CASING"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFCaseForInsertedAttributes" Caption="Case for inserted attributes" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_ATTRIBUTE_CASING" Controls="_cb_attribute_casing" DialogHelp="When set to On, then the Case for Inserted Attributes setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_ATTRIBUTE_CASING"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFCaseForInsertedSingleWordValues" Caption="Case for inserted single word values" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_VALUE_CASING" Controls="_cb_value_casing" DialogHelp="When set to On, then the Case for Inserted Single Word Values setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_VALUE_CASING"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFCaseForInsertedHexValues" Caption="Case for inserted hex values" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_HEX_VALUE_CASING" Controls="_cb_hex_value_casing" DialogHelp="When set to On, then the Case for Inserted Hex Values setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_HEX_VALUE_CASING"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFIndentCaseFromSwitch" Caption="Indent CASE from SWITCH" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_INDENT_CASE" Controls="_cb_indent_case" DialogHelp="When set to On, then the Indent Case from Switch setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_INDENT_CASE"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFNoSpaceBeforeParen" Caption="No space before parenthesis" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_NO_SPACE_BEFORE_PAREN" Controls="_cb_no_space_before" DialogHelp="When set to On, then the No Space Before Parenthesis setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_NO_SPACE_BEFORE_PAREN"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFInsertPaddingBetweenParens" Caption="Insert padding between parentheses" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_PAD_PARENS" Controls="_cb_pad_parens" DialogHelp="When set to On, then the Insert Padding between Parentheses setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_PAD_PARENS"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangAFBeginEndStyle" Caption="Begin/end style" LanguageSetting="AdaptiveFormattingFlags" BackwardsFlag="AFF_BEGIN_END_STYLE" Controls="_cb_begin_end_style" DialogHelp="When set to On, then the Begin/End Style setting for a file is determined using Adaptive Formatting.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Use Adaptive Formatting" Value="On"/>
+				<Condition Function="adaptive_format_get_available_for_language" Flag="AFF_BEGIN_END_STYLE"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<!--    word wrap    -->
+		<BooleanTemplate Name="LanguageWordWrap" Caption="Word wrap when typing" LanguageSetting="WordWrapStyle" Flag="WORD_WRAP_WWS" Controls="_word_wrap" DialogHelp="When On, the editor keeps the cursor within the margins when entering text, moving the cursor, and deleting characters.">
+			<Dependencies Evaluate="All">
+				<NotCondition Function="XW_isSupportedLanguage"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguagePartialWordWrap" Caption="Partial word wrap" LanguageSetting="WordWrapStyle" Flag="PARTIAL_WWS" Controls="ctlpartial" DialogHelp="This is a more conservative version of full word wrap, only wrapping when typing characters, Backspace, or Delete.">
+			<Dependencies Evaluate="All">
+				<NotCondition Function="XW_isSupportedLanguage"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LanguageMargins" Caption="Margins" LanguageSetting="AutoLeftMargin" Type="bool" Controls="frame2" DialogHelp='Specifies the margin style.   If Automatic left margin (first non-blank) is selected, the left margin is determined by the first non blank in the line.  If Fixed left column is selected, you are able to specify the fixed left margin, fixed right margin, and new paragraph column.'>
+			<Choices>
+				<Choice Caption="Automatic left margin (first non-blank)" Value="True"/>
+				<Choice Caption="Fixed left column" Value="False"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LanguageRightMargins" Caption="Right margin" LanguageSetting="FixedWidthRightMargin" Type="bool" Controls="ctlRightMarginFrame" DialogHelp='Specifies how the right margin is determined.  Select Fixed right column to break lines before a particular column.  Select Fixed width to break lines at a maximum amount of non-blank text.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Margins" Value="Automatic left margin (first non blank)"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Fixed right column" Value="False"/>
+				<Choice Caption="Fixed width" Value="True"/>
+			</Choices>
+		</SelectTemplate>
+		<NumericTemplate Name="LanguageWWFixedRightCol" Caption="Column" Function="_lang_right_margin" Type="int" Min="1" Max="-1" Controls="ctlAutoFixedRightColumn" DialogHelp="Specifies the column number at which lines will break.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Margins" Value="Automatic left margin (first non blank)"/>
+				<Condition Option="Right margin" Value="Fixed right column"/>
+			</Dependencies>
+		</NumericTemplate>
+		<NumericTemplate Name="LanguageWWFixedWidth" Caption="Width" LanguageSetting="FixedWidthRightMargin" Type="int" Min="1" Max="-1" Controls="ctlAutoFixedWidthRightMargin" DialogHelp="Specifies the maximum amount of non-blank text allowed on each line.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Margins" Value="Automatic left margin (first non blank)"/>
+				<Condition Option="Right margin" Value="Fixed width"/>
+			</Dependencies>
+		</NumericTemplate>
+		<NumericTemplate Name="LanguageLeftMargin" Caption="Fixed left column" Function="_lang_left_margin" Type="int" Min="1" Max="-1" Controls="ctlFixedLeftColumn" DialogHelp="This option specifies the column number at which the left margin should begin.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Margins" Value="Fixed left column"/>
+			</Dependencies>
+		</NumericTemplate>
+		<NumericTemplate Name="LanguageRightMargin" Caption="Fixed right column" Function="_lang_right_margin" Type="int" Min="1" Max="-1" Controls="ctlFixedRightColumnLabel, ctlFixedRightColumn" DialogHelp="This option specifies the column number at which the right margin should begin.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Margins" Value="Fixed left column"/>
+			</Dependencies>
+		</NumericTemplate>
+		<NumericTemplate Name="LanguageNewParagraph" Caption="New paragraph left column" Function="_lang_new_paragraph_margin" Type="int" Min="1" Max="-1" Controls="ctlNewParagraphLeftColumnLabel, ctlNewParagraphLeftColumn" DialogHelp="This option specifies the column number at which the new paragraph margin should begin.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Margins" Value="Fixed left column"/>
+			</Dependencies>
+		</NumericTemplate>
+		<SelectTemplate Name="LanguageJustifyStyle" Caption="Justify style" LanguageSetting="WordWrapStyle" Type="flag" DialogHelp='Specifies the justification style.  For left justification with respacing, select "Left and respace".  For left justification while preserving existing spaces, select "Left".  To have the left and right edges of the text align exactly the margins, select "Justified".' Controls="_left_and_respace,_left,_justified">
+			<Choices>
+				<Choice Caption="Left and respace" Value="STRIP_SPACES_WWS"/>
+				<Choice Caption="Left" Value="0" Default="True"/>
+				<Choice Caption="Justified" Value="JUSTIFY_WWS"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LanguageOneSpaceAfterPeriod" Caption="One space after period" LanguageSetting="WordWrapStyle" Flag="ONE_SPACE_WWS" Controls="_one_space" DialogHelp="When using the Left and Respace justification style, to have only one space after period, question mark, and exclamation point punctuation characters, set this option to On.  To use two spaces after these characters, set this option to Off.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Justify style" Value="Left and respace"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageEnableSoftWrap" Caption="Enable soft wrap" LanguageSetting="SoftWrap" Type="bool" Controls="ctlsoftwrap" DialogHelp="When set to On, each line is wrapped as though a carriage return was inserted, however, the file itself is not modified.  A curved arrow is displayed at the end of each line, along the right-hand border of the edit pane, indicating that the text continues on the next line.  The horizontal scrollbar disappears, as it is no longer needed."/>
+		<BooleanTemplate Name="LanguageBreakOnWordBoundary" Caption="Break on word boundary" LanguageSetting="SoftWrapOnWord" Type="bool" Controls="ctlbreakonword" DialogHelp="When set to On, then the editor breaks the text at the end of the line so that words are kept whole."/>
+		<!--     Comments -->
+		<BooleanTemplate Name="LanguageCommentsFirstLineIsTop" Caption="First line is top" Function="_lang_block_comment_first_line_is_top" Type="bool" Controls="_ctl_firstline_is_top" DialogHelp="When this option is set to On, the first line of the text selection is used as the first line of the comment. The top border is not drawn. When set to Off, the open comment characters will appear on their own line. ">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsLastLineIsBottom" Caption="Last line is bottom" Function="_lang_block_comment_last_line_is_bottom" Type="bool" Controls="_ctl_lastline_is_bottom" DialogHelp="When this option is set to On, the last line of the text selection is used as the last line of the comment. The bottom border is not drawn. When set to Off, the open comment characters appear on their own line.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</BooleanTemplate>
+		<TextTemplate Name="LanguageCommentsTLC" Caption="Top left corner" Function="_lang_comment_block_top_left_corner" PreserveSpaces="True" Controls="_ctl_tlc" DialogHelp="This option specifies the comment characters used in the top left corner of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsTSide" Caption="Top side" Function="_lang_comment_block_top_side" Controls="ctllabel4,_ctl_thside" DialogHelp="This option specifies the comment characters used on the top horizontal side of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+			<Dependencies Evaluate="All">
+				<Condition Option="First line is top" Value="Off"/>
+			</Dependencies>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsTRC" Caption="Top right corner" Function="_lang_comment_block_top_right_corner" PreserveSpaces="True" Controls="_ctl_trc" DialogHelp="This option specifies the comment characters used in the top right corner of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsLSide" Caption="Left side" Function="_lang_comment_block_left_side" PreserveSpaces="True" Controls="ctllabel5,_ctl_lvside" DialogHelp="This option specifies the comment characters used on the left vertical side of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsRSide" Caption="Right side" Function="_lang_comment_block_right_side" PreserveSpaces="True" Controls="label4,_ctl_rvside" DialogHelp="This option specifies the comment characters used on the right vertical side of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsBLC" Caption="Bottom left corner" Function="_lang_comment_block_bottom_left_corner" PreserveSpaces="True" Controls="_ctl_blc" DialogHelp="This option specifies the comment characters used in the bottom left corner of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsBSide" Caption="Bottom side" Function="_lang_comment_block_bottom_side" Controls="ctllabel6,_ctl_bhside" DialogHelp="This option specifies the comment characters used on the bottom horizontal side of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+			<Dependencies Evaluate="All">
+				<Condition Option="Last line is bottom" Value="Off"/>
+			</Dependencies>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsBRC" Caption="Bottom right corner" Function="_lang_comment_block_bottom_right_corner" PreserveSpaces="True" Controls="_ctl_brc" DialogHelp="This option specifies the comment characters used in the bottom right corner of the comment block.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<BooleanTemplate Name="LanguageCommentsAutoCloseBlockComments" Caption="Automatically close block comments" Variable="def_auto_complete_block_comment" Type="int" Controls="ctl_auto_close_block" DialogHelp="Enables automatic completion of C-style comment block start and end markers."/>
+		<TextTemplate Name="LanguageCommentsLeftLineComment" Caption="Left" Function="_lang_left_line_comment" PreserveSpaces="True" Controls="label5, _ctl_left" DialogHelp="This option specifies the comment characters used on the left side of the commented line.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<TextTemplate Name="LanguageCommentsRightLineComment" Caption="Right" Function="_lang_right_line_comment" PreserveSpaces="True" Controls="label6,_ctl_right" DialogHelp="This option specifies the comment characters used on the right side of the commented line.">
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+		</TextTemplate>
+		<SelectTemplate Name="LanguageCommentsLineCommentLocation" Caption="Location" Function="_lang_line_comment_mode" Type="int" Controls="ctllabel13,_ctl_left_margin,_ctl_level_indent,_ctl_start_column" DialogHelp='This option controls where characters specified in the Left line comment box are placed.  When "At left margin" is selected, then left comment characters are placed flush against the left margin of the editor window. The indent levels are not changed. When "At level of indent", left comment line characters are placed and aligned at the current indent level.  When "Start in column" is selected, then the left line comment characters are placed in a column you specify.'>
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+			<Choices>
+				<Choice Caption="At left margin" Value="LEFT_MARGIN"/>
+				<Choice Caption="At level of indent" Value="LEVEL_OF_INDENT"/>
+				<Choice Caption="Start in column" Value="START_AT_COLUMN"/>
+			</Choices>
+		</SelectTemplate>
+		<NumericTemplate Name="LanguageCommentsLineCommentColumn" Caption="Start in column" Function="_lang_line_comment_column" Type="int" Min="1" Max="80" Controls="_ctl_comment_col" DialogHelp='When Location is set to "Start in column", use this option to specify the column where the left comment line characters should be placed.'>
+			<ChangeEvents>
+				<ChangeEvent Type="OCEF_WRITE_COMMENT_BLOCKS"/>
+			</ChangeEvents>
+			<Dependencies Evaluate="All">
+				<Condition Option="Location" Value="Start in column"/>
+			</Dependencies>
+		</NumericTemplate>
+		<BooleanTemplate Name="LanguageCommentsAutoExpandDocComments" Caption="Automatically expand doc comments" LanguageSetting="CommentEditingFlags" Flag="VS_COMMENT_EDITING_FLAG_AUTO_DOC_COMMENT" Controls="ctl_auto_doc_comment" DialogHelp="When this option is set to On, then a skeleton doc comment is automatically inserted when you type comment start characters and then press Enter on a line directly above a function, class, or variable.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_doc_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsAutoExpandXMLDOCComments" Caption="Automatically expand XMLDOC comments" Variable="def_c_xmldoc" Type="int" Controls="ctl_auto_xmldoc_comment" Exclusions="isExpandXMLDOCOptionExcludedForLanguage" DialogHelp="When this option is set to On, then a skeleton XMLDOC comment is automatically inserted when you type comment start characters and then press Enter on a line directly above a function, class, or variable.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_doc_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsExtendLeadingBorder" Caption="Extend leading border" LanguageSetting="CommentEditingFlags" Flag="VS_COMMENT_EDITING_FLAG_AUTO_JAVADOC_ASTERISK" Controls="ctl_auto_insert_leading_asterick" DialogHelp="When this option is set to On, then leading asterisks are inserted at the beginning of each line in the comment.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_doc_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsSplitLineComments" Caption="Split line comments" LanguageSetting="CommentEditingFlags" Flag="VS_COMMENT_EDITING_FLAG_SPLIT_LINE_COMMENTS" Controls="ctl_auto_linecomment" DialogHelp="If set to On, when you press Enter in the middle of a line comment, a new line comment will automatically be started on the new line. ">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_line_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsExtendLineComments" Caption="Extend line comments" LanguageSetting="CommentEditingFlags" Flag="VS_COMMENT_EDITING_FLAG_EXTEND_LINE_COMMENTS" Controls="ctl_extend_linecomment" DialogHelp="If set to On, when you press Enter at the end of a line containing a line comment, and there is also an aligned line comment on the line before or after the current line, a new line comment will automatically be started on the new line.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_line_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsJoinComments" Caption="Join comments with joining lines" LanguageSetting="CommentEditingFlags" Flag="VS_COMMENT_EDITING_FLAG_JOIN_COMMENTS" Controls="ctl_join_comments" DialogHelp="If set to On, when you press Delete at the end of a line containing a line comment to join the current line with the next line, and the next line is also a line comment, the line comment characters will automatically be deleted.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_line_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LanguageCommentsSplitStrings" Caption="Split strings on enter" LanguageSetting="CommentEditingFlags" Flag="VS_COMMENT_EDITING_FLAG_SPLIT_STRINGS" Controls="ctl_auto_string" DialogHelp="If set to On, when you press Enter to split a line when the cursor is inside of a string, the closing and opening quotes and, if necessary, operators, will automatically be inserted, and the string will be aligned with the original string.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_doc_comments_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<!--     Comment Wrap-->
+		<BooleanTemplate Name="LangEnableCommentWrap" Caption="Enable comment wrap" Function="_lang_enable_comment_wrap" Type="bool" Controls="_ctl_CW_enable_commentwrap" DialogHelp="When set to On, comments are allowed to be wrapped."/>
+		<BooleanTemplate Name="LangEnableBlockCommentWrap" Caption="Enable block comment wrap" Function="_lang_enable_block_comment_wrap" Type="bool" Controls="_ctl_CW_enable_block" DialogHelp="When set to On, block comments are allowed to be wrapped.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangEnableDocCommentWrap" Caption="Enable doc comment wrap" Function="_lang_enable_doc_comment_wrap" Type="bool" Controls="_ctl_CW_enable_javadoc" DialogHelp="When set to On, doc comments are allowed to be wrapped.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangEnableLineCommentWrap" Caption="Enable line comment wrap" Function="_lang_enable_line_comment_wrap" Type="bool" Controls="_ctl_CW_enable_lineblock" DialogHelp="When set to On, line comments are allowed to be wrapped.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<NumericTemplate Name="LangStartWrappingOnLine" Caption="Start wrapping on line" Function="_lang_comment_wrap_start_wrapping_from" Type="int" Min="1" Max="10" Controls="_ctl_CW_start_wrap_label,_ctl_CW_start_wrapping_from,_ctl_CW_start_wrapping_from_spin" DialogHelp="This setting pertains to line comments only. Specifies the number of consecutive line comments that must be present before wrapping is activated.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Enable line comment wrap" Value="On"/>
+			</Dependencies>
+		</NumericTemplate>
+		<SelectTemplate Name="LangCWCommentWidth" Caption="Comment width" Function="_lang_comment_wrap_width" Type="int" Controls="_ctl_CW_use_fixed_width,_ctl_CW_use_fixed_margins,_ctl_CW_use_first_para" DialogHelp='Specifies the width setting for comments.  When "Fixed width" is selected, comments are formatted to a specific width by maintaining the original left margin and adjusting the right margin to meet the target width.  When "Automatic width" is selected, the width of the longest multi-line paragraph in the comment block is used as the width for block comments.  When "Fixed right margin" is selected, lines will break before the specified number of columns has been reached.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Fixed width" Value="CW_USE_FIXED_WIDTH"/>
+				<Choice Caption="Automatic width" Value="CW_USE_FIRST_PARA"/>
+				<Choice Caption="Fixed right margin" Value="CW_USE_FIXED_MARGINS"/>
+			</Choices>
+		</SelectTemplate>
+		<NumericTemplate Name="LangCWWidth" Caption="Width" Function="_lang_comment_wrap_fixed_width_size" Type="int" Min="1" Max="-1" Controls="_ctl_CW_fixed_width_size,_ctl_CW_fixed_width_spin" DialogHelp='Specifies the width of block comments when the Comment width setting is set to "Fixed width".'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Comment width" Value="Fixed width"/>
+			</Dependencies>
+		</NumericTemplate>
+		<BooleanTemplate Name="LangCWUseMaximumRightColumnFixed" Caption="Use maximum right column (Fixed width)" Function="_lang_comment_wrap_use_max_right_column_fixed" Type="bool" Controls="_ctl_CW_max_right_column" DialogHelp='When the Comment width is set to "Fixed with" or "Automatic width", setting this option to On allows you to specify a maximum right column where comments will be wrapped regardless of whether they have reached the fixed or automatic width.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Comment width" Value="Fixed width"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<NumericTemplate Name="LangCWMaximumRightColumnFixed" Caption="Maximum right column (Fixed width)" Function="_lang_comment_wrap_max_right_column_position_fixed" Type="int" Min="1" Max="-1" Controls="_ctl_CW_max_right_size,_ctl_CW_max_right_spin" DialogHelp='When the Comment width is set to "Fixed with" or "Automatic width", then this value specifies the column where all comments will be wrapped even if they have not reached the specified width.  When Comment width is set to "Fixed right margin", then this option specifies where comments will break.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Comment width" Value="Fixed width"/>
+				<Condition Option="Use maximum right column (Fixed width)" Value="On"/>
+			</Dependencies>
+		</NumericTemplate>
+		<BooleanTemplate Name="LangCWUseMaximumRightColumnAuto" Caption="Use maximum right column (Automatic width)" Function="_lang_comment_wrap_use_max_right_column_auto" Type="bool" Controls="_ctl_CW_max_right_column_dyn" DialogHelp='When the Comment width is set to "Fixed with" or "Automatic width", setting this option to On allows you to specify a maximum right column where comments will be wrapped regardless of whether they have reached the fixed or automatic width.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Comment width" Value="Automatic width"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<NumericTemplate Name="LangCWMaximumRightColumnAuto" Caption="Maximum right column (Automatic width)" Function="_lang_comment_wrap_max_right_column_position_auto" Type="int" Min="1" Max="-1" Controls="_ctl_CW_max_right_size_dyn,_ctl_CW_max_right_spin_dyn" DialogHelp='When the Comment width is set to "Fixed with" or "Automatic width", then this value specifies the column where all comments will be wrapped even if they have not reached the specified width.  When Comment width is set to "Fixed right margin", then this option specifies where comments will break.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Comment width" Value="Automatic width"/>
+				<Condition Option="Use maximum right column (Automatic width)" Value="On"/>
+			</Dependencies>
+		</NumericTemplate>
+		<NumericTemplate Name="LangCWRightColumn" Caption="Right column" Function="_lang_comment_wrap_right_column_position" Type="int" Min="1" Max="-1" Controls="_ctl_CW_right_margin_label,_ctl_CW_right_margin,_ctl_CW_right_margin_spin" DialogHelp='When the Comment width is set to "Fixed with" or "Automatic width", then this value specifies the column where all comments will be wrapped even if they have not reached the specified width.  When Comment width is set to "Fixed right margin", then this option specifies where comments will break.'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+				<Condition Option="Comment width" Value="Fixed right margin"/>
+			</Dependencies>
+		</NumericTemplate>
+		<BooleanTemplate Name="LangCWPreserveWidth" Caption="Preserve width on existing comments" Function="_lang_preserve_width_on_existing_comments" Type="bool" Controls="_ctl_CW_auto_override" DialogHelp="If set to On, when editing an existing comment, the editor preserves the width of the existing comment. The width is determined by the length of the longest multi-line paragraph. If the width of the existing comment cannot be determined, the formatting option specified under Comment width will be used instead. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangCWContinueBulletList" Caption="Continue bullet list on ENTER" Function="_lang_comment_wrap_match_previous_paragraph" Type="bool" Controls="_ctl_CW_match_prev_para" DialogHelp="If set to On, when Enter is pressed inside a bulleted paragraph, a new bullet will be inserted and the cursor will be placed at the text starting position. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangUseHangingIndent" Caption="Use hanging indent on block tag comments" Function="_lang_javadoc_auto_indent" Type="bool" Controls="_ctl_CW_javadoc_auto_indent" DialogHelp="If set to On, the second line of a block tag comment will be automatically aligned to the first non-whitespace character after the first word after the tag.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable comment wrap" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<!--    Auto-Complete-->
+		<BooleanTemplate Name="LangACEnableAutoCompletion" Caption="Enable auto-completion" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_ENABLE" Controls="ctl_auto_complete_enable" DialogHelp="If set to On, this option activates the Auto-Complete feature."/>
+		<BooleanTemplate Name="LangACSyntaxExpansion" Caption="Syntax expansion" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SYNTAX" Controls="ctl_auto_complete_expand_syntax" DialogHelp="If set to On, Auto-Complete will show Syntax Expansion choices for the word prefix under the cursor.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACKeywords" Caption="Keywords" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_KEYWORDS" Controls="ctl_auto_complete_keywords" DialogHelp="If set to On, Auto-Complete will show keyword choices for the word prefix under the cursor, if it matches one or more keywords in the current language. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACAliasExpansion" Caption="Alias expansion" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_ALIAS" Controls="ctl_auto_complete_expand_alias" DialogHelp="If set to On, Auto-Complete will show the matching alias for the word under the cursor. Alias names require an exact word match, not just a prefix match. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACSymbols" Caption="Symbols" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SYMBOLS" Controls="ctl_auto_complete_symbols" DialogHelp="If set to On, symbols will be displayed as completion options if the word prefix at the cursor matches one or more symbols using a strict, context-sensitive and language-specific tag search.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Function="_istagging_supported"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACLocals" Caption="Locals" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_LOCALS" Exclusions="!PRO_CT" Controls="ctl_auto_complete_locals" DialogHelp="If set to On, local variables will be displayed as a separate completion category from the general category for Symbols.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Function="_are_locals_supported"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACMembers" Caption="Current class" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_MEMBERS" Exclusions="!PRO_CT" Controls="ctl_auto_complete_members" DialogHelp="If set to On, members of the current class or package will be displayed as a separate completion category from the general category for Symbols.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Function="_istagging_supported"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACCurrentFile" Caption="Current file" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_CURRENT_FILE" Exclusions="!PRO_CT" Controls="ctl_auto_complete_current_file" DialogHelp="If set to On, symbols from the current file will be displayed as a separate completion category from the general category for Symbols.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Function="_istagging_supported"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangACWordCompletion" Caption="Word completion" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_WORDS" Controls="ctl_auto_complete_words" DialogHelp="If set to On, word completions will be displayed if the word prefix under the cursor matches one or more words in the current file.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangACPoundInclude" Caption="List include files after typing #include" LanguageSetting="AutoCompletePoundIncludeOption" Type="int" Controls="ctl_auto_complete_includes, ctl_auto_complete_includes_label" DialogHelp="Determines whether to attempt to list possible files after typing #include.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Function="isAutoCompletePoundIncludeSupported"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Do not list include files" Value="AC_POUND_INCLUDE_NONE"/>
+				<Choice Caption="List quoted files after typing #include" Value="AC_POUND_INCLUDE_QUOTED_ON_SPACE"/>
+				<Choice Caption='List files after typing " or &lt;' Value="AC_POUND_INCLUDE_ON_QUOTELT"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangACArgumentCompletion" Caption="Argument completion" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_LANGUAGE_ARGS" Exclusions="!PRO_CT" Controls="ctl_auto_complete_arguments" DialogHelp="If set to On, turns Auto-Complete on in the Build tool window for completing file names and paths.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition LangCallback="_%s_autocomplete_get_arguments"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangTabInsertsLongestUnique" Caption="Tab inserts longest unique prefix" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_TAB_INSERTS_PREFIX" Controls="ctl_auto_complete_tab_insert" DialogHelp="When this option is set to On, pressing Tab will cause Auto-Complete to attempt to insert the longest unique prefix match of all its completions. If the word prefix cannot be extended, Tab will cycle to the next completion choices.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangTabCyclesThroughChoices" Caption="Tab cycles through choices" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_TAB_NEXT" Controls="ctl_auto_complete_tab_next" DialogHelp="Set this option to On if you want to use Tab and Shift+Tab to cycle through completion choices, as is done in some command shells. If set to Off, Tab will attempt to insert the longest unique prefix (if selected), or insert the selected completion, or cancel Auto-Complete and behave normally if there is no completion selected. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangEnterAlwaysInserts" Caption="Enter always inserts current item" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_ENTER_ALWAYS_INSERTS" Controls="ctlEnterAlwaysInserts" DialogHelp="Set this option to On if you want Enter to only insert if you have selected an item in Auto-Complete. If set to Off, Enter will cancel Auto-Complete if there is no item currently selected.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangCompletionChoice" Caption="Completion choice" LanguageSetting="AutoCompleteOptions" Type="flag" Controls="ctl_auto_complete_selection_label,ctl_auto_complete_selection_method" DialogHelp="">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Automatically choose unique completion" Value="AUTO_COMPLETE_NO_INSERT_SELECTED | AUTO_COMPLETE_UNIQUE"/>
+				<Choice Caption="Insert current completion in file" Value="0"/>
+				<Choice Caption="Manually choose completion" Value="AUTO_COMPLETE_NO_INSERT_SELECTED"/>
+			</Choices>
+		</SelectTemplate>
+		<NumericTemplate Name="LangMinimumPrefixLength" Caption="Minimum prefix length" LanguageSetting="AutoCompleteMinimumLength" Type="int" Min="0" Max="-1" Controls="ctl_auto_complete_minimum" DialogHelp="This option specifies the minimum number of characters the word prefix must contain before auto-completions will be displayed automatically. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</NumericTemplate>
+		<BooleanTemplate Name="LangShowLightBulb" Caption="Show light bulb" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_BULB" Controls="ctl_auto_complete_show_bulb" DialogHelp="If set to On, the editor displays the light bulb as a reminder when Auto-Complete suggestions are available for the current word prefix.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowExpandedText" Caption="Show expanded text" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_WORD" Controls="ctl_auto_complete_show_word" DialogHelp="If set to On, the editor displays the rest of the word or statement being completed.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowListOfMatches" Caption="Show list of matches" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_LIST" Controls="ctl_auto_complete_show_list" DialogHelp="If set to On, the editor displays the list of matches underneath the word prefix.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowIcons" Caption="Show icons" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_ICONS" Controls="ctl_auto_complete_show_icons" DialogHelp="If set to On, the editor displays symbol icons and folder icons.  Set this option to Off to get a more compact list containing only completions.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Option="Show list of matches" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowCategories" Caption="Show categories" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_CATEGORIES" Controls="ctl_auto_complete_show_categories" DialogHelp="If set to On, the editor show completions in a categorized list for each type.  If set to Off, all completions will be shown in one flat, sorted list.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Option="Show list of matches" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowParameters" Caption="Show parameters" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_PROTOTYPES" Exclusions="!PRO_CT" Controls="ctl_auto_complete_show_prototypes" DialogHelp=" If selected, shows the function parameter signatures for symbol completions.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+				<Condition Option="Show list of matches" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowSymbolDeclaration" Caption="Show symbol declaration" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_DECL" Exclusions="!PRO_CT" Controls="ctl_auto_complete_show_decl" DialogHelp="If set to On, for symbol completions, the editor wills how the symbol declaration as a comment to the right of the symbol completion.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowComments" Caption="Show comments" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_COMMENTS" Exclusions="!PRO_CT" Controls="ctl_auto_complete_show_comments" DialogHelp="If set to On, for symbol completions, the editor will display the symbols' comments to the right of the symbol completion.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangShowPrototypes" Caption="Prototypes" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_SHOW_PROTOTYPES" Controls="ctl_auto_complete_show_prototypes" DialogHelp="If set to On, for symbol completions, the editor will display the symbols' function argument list along with the function name in the drop down list when there are a small number of functions to display, or specifically for the symbol under the cursor.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable auto-completion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangSyntaxExpansion" Caption="Syntax expansion" LanguageSetting="SyntaxExpansion" Type="bool" Controls="_syntax_expansion" DialogHelp="When this option is On, pressing the spacebar after typing a keyword such as IF or FOR will cause that syntax element to be expanded, inserting the rest of the statement. "/>
+		<NumericTemplate Name="LangMinimumExpandable" Caption="Minimum expandable keyword length" LanguageSetting="MinimumAbbreviation" Type="int" Min="1" Max="10" Controls="_minimum_expandable_label,_minimum_expandable,_minimum_expandable_spinner" DialogHelp="Sets the minimum length for a keyword that will trigger Syntax Expansion.">
+			<Dependencies Evaluate="All">
+				<NotCondition LangInheritsFrom="html"/>
+				<NotCondition LangInheritsFrom="xml"/>
+				<NotCondition LangInheritsFrom="dtd"/>
+				<Condition Option="Syntax expansion" Value="On"/>
+			</Dependencies>
+		</NumericTemplate>
+		<BooleanTemplate Name="LangUseDynamicSurround" Caption="Use Dynamic Surround" Function="_lang_dynamic_surround_on" Type="bool" Controls="_surround" DialogHelp="Provides the ability to surround a group of statements with a block statement, indented to the correct levels according to your indent settings.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Syntax expansion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangExpandAliasOnSpace" Caption="Expand Aliases on space" LanguageSetting="ExpandAliasOnSpace" Type="bool" Controls="_expand_alias_on_space" DialogHelp="When this option is On, pressing the spacebar after typing the name of a language-specific alias will cause that alias to be expanded, inserting the rest of the statement.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Syntax expansion" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMAutoListMembers" Caption="Auto-list members" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_AUTO_LIST_MEMBERS" Controls="ctlautolistmembers" DialogHelp='If set to On, typing a member access operator (for example, "." or "-&gt;" in C++) will trigger a display of a list of the members for the corresponding type. '>
+			<Dependencies Evaluate="All">
+				<Condition LangCallback="_%s_get_expression_info"/>
+				<Condition Function="_lang_list_members_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMCompletionOnSpace" Caption="Space inserts longuest unique prefix" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_SPACE_COMPLETION" Controls="ctlCompletionOnSpace" DialogHelp="If set to On, pressing the spacebar when List Members is displayed will insert the longest unique matching prefix from the symbols in the list. If this option is set to Off, use Ctrl+Space when List Members is displayed to perform completion. ">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMSpaceAlwaysInsertsSpace" Caption="Space always inserts space" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_SPACE_INSERTS_SPACE" Controls="ctlSpaceInsertsSpace" DialogHelp="If set to On, pressing the spacebar when List Members is displayed will insert the current item and a space in the list after the current item. If this option is set to Off, pressing the spacebar will only insert the current item with no extra space. ">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMEnterAlwaysInsertsItem" Caption="Enter always inserts item" LanguageSetting="AutoCompleteOptions" Flag="AUTO_COMPLETE_ENTER_ALWAYS_INSERTS" Controls="ctlSpaceInsertsSpace" DialogHelp="If set to On, pressing the enter key when List Members is displayed will insert the current item.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMInsertOpenParens" Caption="Insert open parenthesis" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_INSERT_OPEN_PAREN" Controls="ctlInsertOpenParen" DialogHelp="If set to On, selecting an item in the list inserts the current item in the list and any extra characters that are required by the symbol.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangLMPreserveIdentifier" Caption="Preserve identifier to the right of cursor" LanguageSetting="CodehelpFlags" Type="flag" Controls="ctlpreserveidentifier" DialogHelp='When Preserve always is selected, only the identifier characters before the cursor are replaced with an item selected from a List Members dialog. Identifier characters after the cursor are preserved. When Replace entire identifier is selected, identifier characters following the cursor are replaced with the item selected from a list members dialog. When Preserve for auto list members only is selected, trailing identifier characters are preserved for auto list members but not when listing members on demand by pressing Alt+Dot. '>
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Preserve for auto list members only" Value="VSCODEHELPFLAG_PRESERVE_IDENTIFIER | VSCODEHELPFLAG_REPLACE_IDENTIFIER" Default="True" Exclusions="!PRO_CT"/>
+				<Choice Caption="Replace entire identifier" Value="VSCODEHELPFLAG_REPLACE_IDENTIFIER"/>
+				<Choice Caption="Preserve always" Value="VSCODEHELPFLAG_PRESERVE_IDENTIFIER"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangLMAutoListCompatible" Caption="Auto-list compatible values" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_AUTO_LIST_VALUES" Controls="ctlautolistvalues" DialogHelp="If set to On, compatible variables are automatically listed after you press the spacebar after assignment operators and return statements. Global (non-module) variables are not listed.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_istagging_supported"/>
+				<Condition LangCallback="_%s_get_expression_pos"/>
+				<Condition LangCallback="_%s_analyze_return_type"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMUseStrictCaseSensitivity" Caption="Use strict case-sensitivity rules" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_LIST_MEMBERS_CASE_SENSITIVE" Controls="ctllistmemcasesensitive" DialogHelp="Set to On to force List Members to use strict case-sensitivity rules."/>
+		<!--     Context Tagging-->
+		<BooleanTemplate Name="LangPMAutoDisplayParamInfo" Caption="Auto-display parameter information" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_AUTO_FUNCTION_HELP" Controls="ctlautofunctionhelp" DialogHelp="If set to On, the prototype and comments for a function are automatically displayed when a function operator such as the open parenthesis is typed, and the current argument is highlighted within the displayed prototype.">
+			<Dependencies Evaluate="All">
+				<Condition LangCallback="_%s_fcthelp_get"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPMShowComments" Caption="Show comments" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_DISPLAY_FUNCTION_COMMENTS" Controls="ctldispfunctioncomment" DialogHelp="If set to On, comments are displayed when Parameter Info is displayed.">
+			<Dependencies Evaluate="All">
+				<Condition LangCallback="_%s_fcthelp_get"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPMAutoInsertMatchingParam" Caption="Auto-insert matching parameter" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_AUTO_PARAMETER_COMPLETION" Controls="ctlautoinsertparam" DialogHelp="If set to On, when Parameter Info is displayed and the name of the current formal parameter matches the name of a symbol in the current scope of the appropriate type or class, the name is automatically inserted. When the name is inserted, it is also selected so that you can type over it, or you can type Comma, Space, Tab, or a closing parenthesis to use the automatically inserted parameter. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Auto-display parameter information" Value="On"/>
+				<Condition LangCallback="_%s_fcthelp_get"/>
+				<Condition Variable="def_persistent_select" Value="D"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPMAutoListCompatibleParams" Caption="Auto-list compatible parameters" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_AUTO_LIST_PARAMS" Controls="ctlautolistparams" DialogHelp="If set to On, compatible variables are automatically listed when parameter info is active and typing the arguments to a function call. Global (non-module) variables are not listed.">
+			<Dependencies Evaluate="All">
+				<Condition LangCallback="_%s_analyze_return_type"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPMPadParens" Caption="Pad parentheses" LanguageSetting="CodehelpFlags" BackwardsFlag="VSCODEHELPFLAG_NO_SPACE_AFTER_PAREN" Controls="ctlspaceafterparen" DialogHelp="If set to On, a space is inserted after the open parenthesis when a parameter name is automatically inserted. In addition, if you type a close parenthesis after an automatically inserted parameter, it will insert a space before the close parenthesis. ">
+			<Dependencies Evaluate="All">
+				<Condition Option="Auto-display parameter information" Value="On"/>
+				<Condition LangCallback="_%s_fcthelp_get"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPMInsertSpaceAfterComma" Caption="Insert space after comma" LanguageSetting="CodehelpFlags" BackwardsFlag="VSCODEHELPFLAG_NO_SPACE_AFTER_COMMA" Controls="ctlspaceaftercomma" DialogHelp="If set to On, a space is inserted after the comma when a parameter name is automatically inserted.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Auto-display parameter information" Value="On"/>
+				<Condition LangCallback="_%s_fcthelp_get"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangPMInsertParamKeywords" Caption="Insert keyword before parameter when required" LanguageSetting="CodehelpFlags" BackwardsFlag="VSCODEHELPFLAG_NO_INSERT_PARAMETER_KEYWORDS" Controls="ctlinsertparamkeyword" DialogHelp="If set to On, for languages that require a keyword before function parameters to indicate calling convention (e.g., C#), the keyword will be inserted when a parameter name is automatically inserted.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Auto-display parameter information" Value="On"/>
+				<Condition LangCallback="_%s_fcthelp_get"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangGTDGoToDefinition" Caption="Prioritize navigation to" LanguageSetting="CodehelpFlags" Type="flag" Controls="ctlfinddefinition,ctlfinddeclaration" DialogHelp="Determines the behavior that occurs when the Go to Definition feature is used.  To always navigate to the symbol definition or symbol declaration, select the corresponding option.  The editor will follow this behavior, provided the definition or declaration is unique.  You can always select to be prompted each time.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Symbol definition (proc)" Value="VSCODEHELPFLAG_FIND_TAG_PREFERS_DEFINITION"/>
+				<Choice Caption="Symbol declaration (proto)" Value="VSCODEHELPFLAG_FIND_TAG_PREFERS_DECLARATION"/>
+				<Choice Caption="Prompt with all choices" Value="0"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangGTDPrioritizeNavForCurProj" Caption="Prioritize navigation to symbols in the current project" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_FIND_TAG_PREFERS_PROJECT" Controls="ctlpreferproject" DialogHelp="If set to On, Go to Definition will navigate directly to a symbol in the current project if there is a unique match.  If there is no unique match, then you will be prompted with all choices."/>
+		<BooleanTemplate Name="LangGTDIgnoreForwardClassDeclarations" Caption="Ignore forward class declarations" LanguageSetting="CodehelpFlags" BackwardsFlag="VSCODEHELPFLAG_FIND_FORWARD_CLASS_DECLARATIONS" Controls="ctlignoreforwardclass" DialogHelp="When this option is set to On, Go to Definition filters out forward class declarations, and only shows the actual class definitions and declarations.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangGTDUseStrictCaseSensitivity" Caption="Use strict case-sensitivity rules" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_GO_TO_DEF_CASE_SENSITIVE" Controls="ctlgotodefcasesensitive" DialogHelp="When set to On, Go to Definition and Go To Declaration operate on strict case-sensitivity rules."/>
+		<BooleanTemplate Name="LangGTDAttemptToFilterNonMatching" Caption="Attempt to filter out non-matching function overloads (expensive and slow)" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_FILTER_OVERLOADED_FUNCTIONS" Controls="ctlfilteroverloads" DialogHelp="When set to On, non-matching function overloads are filtered out.  This affects performance.">
+			<Dependencies Evaluate="All">
+				<Condition LangCallback="_%s_analyze_return_type"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangHCShowInfoForSymbol" Caption="Show info for symbol under mouse" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_MOUSE_OVER_INFO" Controls="ctlmouseoverinfo" DialogHelp="When set to On, as the mouse cursor floats over a symbol, the information and comments for that symbol are displayed.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMShowComments" Caption="Show comments" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_DISPLAY_MEMBER_COMMENTS" Controls="ctldispmembercomment" DialogHelp="If set to On, the comments are displayed for the symbol under the mouse.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMShowReturnType" Caption="Evaluate and show return type" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_DISPLAY_RETURN_TYPE" Controls="ctldispreturntype" DialogHelp="If set to On, the return type the symbol under the mouse is evaluated and displayed along with the symbol declaration.  This is helpful when the symbol type is inferred or an unqualified name which was imported.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangHCHighlightMatchingSymbols" Caption="Highlight matching symbols under cursor" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_HIGHLIGHT_TAGS" Controls="ctlhighlighttag" DialogHelp="When set to On, all occurrences of the current symbol under the cursor in the buffer are highlighted. The highlight color is controlled by the Symbol Highlight screen element (Tools &gt; Options &gt; Appearance &gt; Color).">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangHCPreviewInfoForSymbol" Caption="Show preview for symbol under cursor" LanguageSetting="CodehelpFlags" BackwardsFlag="VSCODEHELPFLAG_NO_PREVIEW_INFO" Controls="ctlpreviewinfo" DialogHelp="When set to On, the information and definition/declaration for the symbol under the cursor is displayed in the Preview tool window.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMPreviewComments" Caption="Show comments" LanguageSetting="CodehelpFlags" BackwardsFlag="VSCODEHELPFLAG_PREVIEW_NO_COMMENTS" Controls="ctldisppreiewcomment" DialogHelp="If set to On, the comments are displayed for the symbol under the cursor in the Preview tool window.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangLMPreviewReturnType" Caption="Evaluate and show return type" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_PREVIEW_RETURN_TYPE" Controls="ctlpreviewreturntype" DialogHelp="If set to On, the return type the symbol under the cursor is evaluated and displayed along with the symbol declaration in the Preview tool window.  This is helpful when the symbol type is inferred or an unqualified name which was imported.">
+			<Dependencies Evaluate="All">
+				<Condition Function="_lang_auto_complete_tagging_enabled"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangHCUseStrictCaseSensitivity" Caption="Use strict case-sensitivity when completing identifiers" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_IDENTIFIER_CASE_SENSITIVE" Controls="ctlidentcasesensitive" DialogHelp="When set to On, strict case-sensitivity rules are followed when completing identifiers."/>
+		<BooleanTemplate Name="LangHCShowStatements" Caption="Show statements in the Defs tool window" LanguageSetting="CodehelpFlags" Flag="VSCODEHELPFLAG_SHOW_STATEMENTS_IN_DEFS" Controls="ctlshowstatements" DialogHelp="When set to On, if supported for the current langauge, the Defs tool window will show a statement-level outline rather than just showing symbols."/>
+		<!--     File Options-->
+		<BooleanTemplate Name="LangLOLoadAsBinary" Caption="Load as Binary" LanguageSetting="LoadAsBinary" Type="bool" DialogHelp="When set to On, files are loaded without any translations (like changing tabs to spaces). This setting has precedence over all global options, as well as all language-specific options."/>
+		<SelectTemplate Name="LangLOExpandTabsToSpaces" Caption="Expand tabs to spaces" LanguageSetting="LoadExpandTabsToSpaces" Type="int" Exclusions="isFileOptionExcludedForLanguage" DialogHelp="When set to On, the entire contents of files are read into memory and tabs are expanded into spaces for this language.   When set to Default, then the value of Tools > Options > File Options > Load > Expand tabs to spaces is used.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Load as Binary" Value="Off"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Default" Value="-1"/>
+				<Choice Caption="On" Value="1"/>
+				<Choice Caption="Off" Value="0"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangSOLoadAsBinary" Exclusions="Eclipse" Caption="Save as Binary" LanguageSetting="SaveAsBinary" Type="bool" DialogHelp="When set to On, files are saved without any translations, exactly byte-for-byte as they appear in the buffer. This setting has precedence over all global options, as well as all language-specific options."/>
+		<SelectTemplate Name="LangSOExpandTabsToSpaces" Exclusions="Eclipse,isFileOptionExcludedForLanguage" Caption="Expand tabs to spaces" LanguageSetting="SaveExpandTabsToSpaces" Type="int" DialogHelp="When set to Expand all tabs to spaces, tabs are expanded to spaces according to the tab stops of this language when the buffer is saved.  You can also set this option to only expand tabs to spaces on lines that have been modified or inserted.  When set to Default, then the value of Tools > Options > File Options > Save > Expand tabs to spaces is used.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Save as Binary" Value="Off"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Default" Value="-1"/>
+				<Choice Caption="Do not expand tabs to spaces" Value="ETO_OFF"/>
+				<Choice Caption="Expand all tabs to spaces" Value="ETO_EXPAND_ALL"/>
+				<Choice Caption="Expand tabs to spaces only on modified lines" Value="ETO_EXPAND_MODIFIED"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangSOStripTrailing" Caption="Strip trailing spaces" LanguageSetting="SaveStripTrailingSpaces" Type="int" Exclusions="isFileOptionExcludedForLanguage" DialogHelp="When set to True, trailing spaces at the end lines are stripped when the buffer is saved for this language.   When set to Default, then the value of Tools > Options > File Options > Save > Strip trailing spaces is used.">
+			<Dependencies Evaluate="Any">
+				<Condition Option="Save as Binary" Value="Off"/>
+				<Condition Function="isEclipsePlugin"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="Default" Value="-1"/>
+				<Choice Caption="Do not strip trailing spaces" Value="STSO_OFF"/>
+				<Choice Caption="Strip all trailing spaces" Value="STSO_STRIP_ALL"/>
+				<Choice Caption="Strip trailing spaces only from modified lines" Value="STSO_STRIP_MODIFIED"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangSOSEOLFormat" Caption="Line format" LanguageSetting="SaveEOLFormat" Type="string" DialogHelp="Specifies how end of line characters are translated when a file is saved. Automatically attempts to determine the context.">
+			<Choices>
+				<Choice Caption="Automatic" Value="A"/>
+				<Choice Caption="DOS/Windows (CRLF)" Value="D"/>
+				<Choice Caption="Unix/macOS (LF)" Value="U"/>
+				<Choice Caption="Mac Classic (CR)" Value="M"/>
+			</Choices>
+		</SelectTemplate>
+		<!--    Lang Formatting-->
+		<SelectTemplate Name="LangKeywordCase" Caption="Keyword case" LanguageSetting="KeywordCase" Type="int" Controls="frame2,_lower,_upper,_capitalize" DialogHelp="This option specifies the case of keywords used by Syntax Expansion.">
+			<Choices>
+				<Choice Caption="Lowercase" Value="WORDCASE_LOWER"/>
+				<Choice Caption="Uppercase" Value="WORDCASE_UPPER"/>
+				<Choice Caption="Capitalize first letter" Value="WORDCASE_CAPITALIZE"/>
+				<Choice Caption="None" Value="WORDCASE_PRESERVE"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangBeginEndStyle" Caption="Begin/end style" LanguageSetting="BeginEndStyle" Type="int" Controls="_style0,_style1,_style2,label2,label3,label4" DialogHelp="This option specifies the brace style used by Syntax Indent and Syntax Expansion.">
+			<Choices>
+				<Choice Caption="Style 1" Value="BES_BEGIN_END_STYLE_1"/>
+				<Choice Caption="Style 2" Value="BES_BEGIN_END_STYLE_2"/>
+				<Choice Caption="Style 3" Value="BES_BEGIN_END_STYLE_3"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangInsertBracesImmediately" Caption="Insert braces immediately" LanguageSetting="InsertBeginEndImmediately" Type="bool" Controls="_insert" DialogHelp="When this option is selected, the template is inserted with braces."/>
+		<BooleanTemplate Name="LangInsertBlankLineBetweenBraces" Caption="Insert blank line between braces" LanguageSetting="InsertBlankLineBetweenBeginEnd" Type="bool" Controls="_insert_blank_line" DialogHelp="When this option is selected, a blank line is inserted between the braces when a template expands with braces"/>
+		<BooleanTemplate Name="LangSameLineBraces" Caption="Insert braces on same line" LanguageSetting="InsertBracesOnSameLine" Type="bool" Controls="_same_line_braces" DialogHelp="When this option is selected, both braces are inserted on the current line, with the cursor between them."/>
+		<BooleanTemplate Name="LangQuickBrace" Caption="Quick brace/unbrace one line statements" LanguageSetting="QuickBrace" Type="bool" Controls="_quick_brace" DialogHelp="This option enables Quick Brace/Unbrace, features which allow you to convert a single line statement to a brace-enclosed block, and vice versa."/>
+		<BooleanTemplate Name="LangCuddleElse" Caption='Place "else" on same line as "}"' LanguageSetting="CuddleElse" Type="bool" Controls="_ctl_cuddle_else" DialogHelp="When this option is selected, the ELSE keyword is placed on the same line as }."/>
+		<BooleanTemplate Name="LangIndentFirstLevel" Caption="Indent first level of code" LanguageSetting="IndentFirstLevel" Type="bool" Controls="_indent" DialogHelp="When this option is selected, Syntax Indent indents the cursor after declarations such as functions."/>
+		<BooleanTemplate Name="LangUseContinuationIndent" Caption="Use continuation indent on function parameters" LanguageSetting="UseContinuationIndentOnFunctionParameters" Type="int" Controls="ctlUseContOnParameters" DialogHelp="When this option is selected, function parameters always use the continuation indent."/>
+		<BooleanTemplate Name="LangIndentCaseFromSwitch" Caption="Indent CASE from SWITCH" LanguageSetting="IndentCaseFromSwitch" Type="bool" Controls="_indent_case" DialogHelp="When this option is selected, Syntax Expansion places the CASE statement indented from the SWITCH statement column."/>
+		<BooleanTemplate Name="LangNoSpaceBeforeParen" Caption="No space before parenthesis" LanguageSetting="NoSpaceBeforeParen" Type="bool" Controls="_no_space" DialogHelp="When this option is selected, no space is placed between keywords (such as if, for, or while) and the open parenthesis when Syntax Expansion occurs."/>
+		<BooleanTemplate Name="LangPadParens" Caption="Insert padding between parentheses" LanguageSetting="PadParens" Type="bool" Controls="ctl_pad_between_parens" DialogHelp="When this option is selected, a space is placed after the open parenthesis and before the close parenthesis, providing padding for the enclosed text."/>
+		<SelectTemplate Name="LangInsertedTagCase" Caption="Case for inserted tags" LanguageSetting="TagCase" Type="int" Controls="ctlframe1,tag_upcase,tag_lowcase,tag_cap" DialogHelp="This option specifies the case of inserted tags.">
+			<Choices>
+				<Choice Caption="Lowercase" Value="0"/>
+				<Choice Caption="Uppercase" Value="1"/>
+				<Choice Caption="Capitalize first letter" Value="2"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangInsertedAttrCase" Caption="Case for inserted attributes" LanguageSetting="AttributeCase" Type="int" Controls="ctlframe2,attrib_upcase,attrib_lowcase,attrib_cap" DialogHelp="This option specifies the case of inserted attributes.">
+			<Choices>
+				<Choice Caption="Lowercase" Value="0"/>
+				<Choice Caption="Uppercase" Value="1"/>
+				<Choice Caption="Capitalize first letter" Value="2"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangInsertedSWordCase" Caption="Case for inserted single word values" LanguageSetting="ValueCase" Type="int" Controls="ctlframe4,sword_upcase,sword_lowcase,sword_cap" DialogHelp="This option specifies the case of inserted single word values">
+			<Choices>
+				<Choice Caption="Lowercase" Value="0"/>
+				<Choice Caption="Uppercase" Value="1"/>
+				<Choice Caption="Capitalize first letter" Value="2"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangInsertedHexCase" Caption="Case for hex values" LanguageSetting="HexValueCase" Type="int" Controls="ctlframe3,html_hex_upcase,html_hex_lowcase" DialogHelp="This option specifies the case of hexadecimal values.">
+			<Choices>
+				<Choice Caption="Lowercase" Value="0"/>
+				<Choice Caption="Uppercase" Value="1"/>
+			</Choices>
+		</SelectTemplate>
+		<SelectTemplate Name="LangEmbeddedASPDialect" Caption="Embedded ASP Dialect" Function="_lang_embedded_lexer" Type="string" Controls="ctlcsharp,ctlvisualbasic,ctlvbscript,ctljscript" DialogHelp="Specifies the type of ASP that is embedded in your source.  This affects embedded language color coding.">
+			<Choices>
+				<Choice Caption="VBScript" Value="VBScript" Default="True"/>
+				<Choice Caption="JScript (JavaScript)" Value="JScript"/>
+				<Choice Caption="Java" Value="Java"/>
+				<Choice Caption="Python" Value="Python"/>
+				<Choice Caption="Visual Basic" Value="Visual Basic"/>
+				<Choice Caption="C# (C-Sharp)" Value="CSharp"/>
+				<Choice Caption="Ruby" Value="Ruby"/>
+				<Choice Caption="Perl" Value="Perl"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangUsePathsForFileEntries" Caption="Use paths for file entries" LanguageSetting="UsePathsForFileEntries" Type="bool" Controls="html_file_path" DialogHelp="This option is used by the HTML toolbar. When this attribute is selected, path information is included when inserting file names into the value of an attribute."/>
+		<BooleanTemplate Name="LangUseLowerFileNames" Caption="Use lowercase file names when inserting links" LanguageSetting="LowercaseFilenamesWhenInsertingLinks" Type="bool" Controls="html_filename" DialogHelp="This option is used by the HTML toolbar. When this option is selected, the lowercase file names are used when inserting links into the value of an attribute."/>
+		<BooleanTemplate Name="LangUseQuotesForNums" Caption="Use quotes for numerical values" LanguageSetting="QuotesForNumericValues" Type="bool" Controls="num_quotes" DialogHelp="When this option is selected, number values are enclosed in double quotes after the equals sign of an attribute inside the body of a tag."/>
+		<BooleanTemplate Name="LangUseQuotesforSWord" Caption="Use quotes for single word values" LanguageSetting="QuotesForSingleWordValues" Type="bool" Controls="sword_quotes" DialogHelp="When this option is selected, word values are enclosed in double quotes after the equals sign of an attribute inside the body of a tag."/>
+		<BooleanTemplate Name="LangInsertColorNames" Caption="Insert colors using color names (if possible)" LanguageSetting="UseColorNames" Type="bool" Controls="html_color_name" DialogHelp="When this option is selected, colors are inserted by using the color names if possible."/>
+		<BooleanTemplate Name="LangUseDivTags" Caption="Use &gt;DIV&lt; tags for alignment" LanguageSetting="UseDivTagsForAlignment" Type="bool" Controls="html_align_tabs" DialogHelp="This option is used by the HTML toolbar. When this option is selected, the &lt;DIV&gt; tag is used for aligning text."/>
+		<BooleanTemplate Name="LangAutoSymbolTranslation" Caption="Auto symbol translation" LanguageSetting="AutoSymbolTranslation" Type="bool" Controls="ctl_XW_autoSymbolTrans_check" DialogHelp="When selected, Auto Symbol Translation is enabled, a feature that automatically converts a character or sequence of characters to the appropriate entity reference."/>
+		<BooleanTemplate Name="LangAutoValidate" Caption="Auto validate on open" LanguageSetting="AutoValidateOnOpen" Type="bool" Controls="ctl_xml_validate_on_open" DialogHelp="When this option is selected, files are validated as soon as they are opened."/>
+		<BooleanTemplate Name="LangCobolNumStyle" Caption="COBOL style (columns 1-6)" LanguageSetting="NumberingStyle" Flag="VSRENUMBER_COBOL" Controls="ctl_numbers_cobol" DialogHelp="When selected, expect line numbers in columns one through six when renumbering lines."/>
+		<BooleanTemplate Name="LangSPFNumStyle" Caption="SPF style (columns 73-80)" LanguageSetting="NumberingStyle" Flag="VSRENUMBER_STD" Controls="ctl_numbers_spf" DialogHelp="When selected, expect line numbers in columns seventy-three through eighty when renumbering lines."/>
+		<BooleanTemplate Name="LangAutoCaseKeywords" Caption="Auto case keywords" LanguageSetting="AutoCaseKeywords" Type="bool" Controls="ctlautocase" DialogHelp="Determines whether keyword case will be corrected as you type."/>
+		<!--    Auto-Bracket   -->
+		<BooleanTemplate Name="LangABEnable" Caption="Enable Auto-Close" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_ENABLE" Controls="_cb_auto_bracket" DialogHelp="When this option is selected, bracket and quotation punctuations are automatically closed when typed."/>
+		<BooleanTemplate Name="LangABParen" Caption="Parenthesis  ( )" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_PAREN" Controls="_cb_ab_paren" DialogHelp="Automatically close typed parenthesis ().">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABParenPad" Caption="Insert Padding" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_PAREN_PAD" Controls="_cb_ab_paren_pad" DialogHelp="Insert padded spaces into auto-closed parenthesis (  ).">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+				<Condition Option="Parenthesis  ( )" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABBracket" Caption="Square Bracket  [ ]" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_BRACKET" Controls="_cb_ab_bracket" DialogHelp="Automatically close typed square bracket [].">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABBracketPad" Caption="Insert Padding" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_BRACKET_PAD" Controls="_cb_ab_bracket_pad" DialogHelp="Insert padded spaces into auto-closed square bracket [  ].">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+				<Condition Option="Square Bracket  [ ]" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABAngle" Caption="Angle Bracket  &lt; &gt;" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_ANGLE_BRACKET" Controls="_cb_ab_angle" DialogHelp="Automatically close typed angle brackets &lt;&gt;.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABAnglePad" Caption="Insert Padding" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_ANGLE_BRACKET_PAD" Controls="_cb_ab_angle_pad" DialogHelp="Insert padded spaces into auto-closed angle brackets &lt;  &gt;.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+				<Condition Option="Angle Bracket  &lt; &gt;" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABDoubleQuote" Caption='Double Quote  " "' LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_DOUBLE_QUOTE" Controls="_cb_ab_dquote" DialogHelp='Automatically close typed double quotes "".'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABSingleQuote" Caption="Single Quote  ' '" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_SINGLE_QUOTE" Controls="_cb_ab_squote" DialogHelp="Automatically close typed single quotes ''.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangABBrace" Caption="Brace  { }" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_BRACE" Controls="_cb_ab_brace" Exclusions="isLangAutoCloseBraceExcludedForLanguage" DialogHelp="Automatically close typed braces {} for supported languages.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<SelectTemplate Name="LangABBracePosition" Caption="Put closing brace" LanguageSetting="AutoBracePlacement" Type="int" Controls="ctllabel1, _ctl_sameline, _ctl_nextline, _ctl_afterblank" Exclusions="isLangAutoCloseAdvanceBraceExcludedForLanguage" DialogHelp="Where to position the automatically inserted closing brace.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+				<Condition Option="Brace  { }" Value="On"/>
+			</Dependencies>
+			<Choices>
+				<Choice Caption="On same line" Value="AUTOBRACE_PLACE_SAMELINE"/>
+				<Choice Caption="On next line" Value="AUTOBRACE_PLACE_AFTERBLANK"/>
+				<Choice Caption="After blank line" Value="AUTOBRACE_PLACE_NEXTLINE"/>
+			</Choices>
+		</SelectTemplate>
+		<BooleanTemplate Name="LangABBracePad" Caption="Insert Padding" LanguageSetting="AutoBracket" Flag="AUTO_BRACKET_BRACE_PAD" Controls="_cb_ab_bracepad" Exclusions="isLangAutoClosePadBracesExcludedForLanguage" DialogHelp="Insert padded spaces.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Close" Value="On"/>
+				<Condition Option="Brace  { }" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<!--    Auto-Surround   -->
+		<BooleanTemplate Name="LangASEnable" Caption="Enable Auto-Surround" LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_ENABLE" Controls="_cb_auto_surround" DialogHelp="When this option is selected, bracket and quotation punctuations will surround current selection."/>
+		<BooleanTemplate Name="LangASParen" Caption="Parenthesis  ( )" LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_PAREN" Controls="_cb_as_paren" DialogHelp="Automatically surround selection with typed parenthesis ().">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Surround" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangASBracket" Caption="Square Bracket  [ ]" LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_BRACKET" Controls="_cb_as_bracket" DialogHelp="Automatically surround selection with typed square bracket [].">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Surround" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangASAngle" Caption="Angle Bracket  &lt; &gt;" LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_ANGLE_BRACKET" Controls="_cb_as_angle" DialogHelp="Automatically surround selection with typed angle brackets &lt;&gt;.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Surround" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangASDoubleQuote" Caption='Double Quote  " "' LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_DOUBLE_QUOTE" Controls="_cb_as_dquote" DialogHelp='Automatically surround selection with typed double quotes "".'>
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Surround" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangASSingleQuote" Caption="Single Quote  ' '" LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_SINGLE_QUOTE" Controls="_cb_as_squote" DialogHelp="Automatically surround selection with typed single quotes ''.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Surround" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+		<BooleanTemplate Name="LangASBrace" Caption="Brace  { }" LanguageSetting="AutoSurround" Flag="AUTO_BRACKET_BRACE" Controls="_cb_as_brace" DialogHelp="Automatically surround selection with braces {}.">
+			<Dependencies Evaluate="All">
+				<Condition Option="Enable Auto-Surround" Value="On"/>
+			</Dependencies>
+		</BooleanTemplate>
+	</PropertyTemplates>
+</Options>

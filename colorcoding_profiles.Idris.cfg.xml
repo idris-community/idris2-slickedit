@@ -1,0 +1,115 @@
+<options>
+	<profile n="colorcoding_profiles.Idris" version="2">
+		<p n="idchars" v="a-zA-Z_$ 0-9"/>
+		<p n="case_sensitive" v="1"/>
+		<p n="mn_flags" v="digit_float digit_int dot_float"/>
+		<p n="comment,--"><attrs color_to_eol="comment"/></p>
+		<p n="comment,{-"><attrs end="-}" flags="multiline"/></p>
+		<p n="function,^:v"><attrs start_col="1" flags="regex"/></p>
+		<p n="inherit" v="(None)"/>
+		<p n="k,case"/>
+		<p n="k,data"/>
+		<p n="k,do"/>
+		<p n="k,else"/>
+		<p n="k,export"/>
+		<p n="k,if"/>
+		<p n="k,import"/>
+		<p n="k,in"/>
+		<p n="k,Int"/>
+		<p n="k,Integer"/>
+		<p n="k,let"/>
+		<p n="k,module"/>
+		<p n="k,of"/>
+		<p n="k,public"/>
+		<p n="k,then"/>
+		<p n="k,Type"/>
+		<p n="k,where"/>
+		<p n="k,with"/>
+		<p n="lib,all"/>
+		<p n="lib,Append"/>
+		<p n="lib,Bool"/>
+		<p n="lib,Cast"/>
+		<p n="lib,closeFile"/>
+		<p n="lib,Data"/>
+		<p n="lib,DecEq"/>
+		<p n="lib,Either"/>
+		<p n="lib,Eq"/>
+		<p n="lib,EqNat"/>
+		<p n="lib,exactLength"/>
+		<p n="lib,False"/>
+		<p n="lib,fEOF"/>
+		<p n="lib,fGetLine"/>
+		<p n="lib,File"/>
+		<p n="lib,FileError"/>
+		<p n="lib,FileNotFound"/>
+		<p n="lib,FileReadError"/>
+		<p n="lib,FileWriteError"/>
+		<p n="lib,Fin"/>
+		<p n="lib,GenericFileError"/>
+		<p n="lib,getLine"/>
+		<p n="lib,IO"/>
+		<p n="lib,isDigit"/>
+		<p n="lib,Just"/>
+		<p n="lib,Left"/>
+		<p n="lib,List"/>
+		<p n="lib,Maybe"/>
+		<p n="lib,Mode"/>
+		<p n="lib,Monad"/>
+		<p n="lib,Nat"/>
+		<p n="lib,Nil"/>
+		<p n="lib,not"/>
+		<p n="lib,Nothing"/>
+		<p n="lib,openFile"/>
+		<p n="lib,Ord"/>
+		<p n="lib,PermissionDenied"/>
+		<p n="lib,Prelude"/>
+		<p n="lib,printLn"/>
+		<p n="lib,pure"/>
+		<p n="lib,putStr"/>
+		<p n="lib,putStrLn"/>
+		<p n="lib,Read"/>
+		<p n="lib,ReadAppend"/>
+		<p n="lib,ReadWrite"/>
+		<p n="lib,ReadWriteTruncate"/>
+		<p n="lib,repl"/>
+		<p n="lib,replWith"/>
+		<p n="lib,Right"/>
+		<p n="lib,S"/>
+		<p n="lib,String"/>
+		<p n="lib,trim"/>
+		<p n="lib,True"/>
+		<p n="lib,unpack"/>
+		<p n="lib,Vect"/>
+		<p n="lib,writeFile"/>
+		<p n="lib,WriteTruncate"/>
+		<p n="lib,Z"/>
+		<p n="op,=="/>
+		<p n="op,-"/>
+		<p n="op,::"/>
+		<p n="op,/"/>
+		<p n="op,*"/>
+		<p n="op,+"/>
+		<p n="op,-&gt;"/>
+		<p n="op,&gt;="/>
+		<p n="op,&gt;"/>
+		<p n="op,&gt;&gt;="/>
+		<p n="op,&lt;="/>
+		<p n="op,&lt;-"/>
+		<p n="op,&lt;"/>
+		<p n="pp,%name"/>
+		<p n="pu,="/>
+		<p n="pu,|"/>
+		<p n="pu,,"/>
+		<p n="pu,:"/>
+		<p n="pu,?"/>
+		<p n="pu,("/>
+		<p n="pu,)"/>
+		<p n="pu,["/>
+		<p n="pu,]"/>
+		<p n="pu,{"/>
+		<p n="pu,}"/>
+		<p n="pu,\"/>
+		<p n='string,"'><attrs end='"' flags="multiline"/></p>
+		<p n="string,'"><attrs end="'" flags="terminate"/></p>
+	</profile>
+</options>
