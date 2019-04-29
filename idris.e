@@ -1,5 +1,6 @@
 /// SlickEdit module for Idris programming
 #include "slick.sh"
+#include "tagsdb.sh"
 
 static _str _quote(_str s) {
   // TODO: escape s
@@ -80,3 +81,36 @@ _command IdrisCaseSplit() { _idris_cmd_line_word(":cs!"); }
 _command IdrisMakeCase() { _idris_cmd_line_word(":mc!"); }
 _command IdrisMakeLemma() { _idris_cmd_line_word(":ml!"); }
 _command IdrisSearchExpression() { _idris_cmd_line_word(":ps!"); }
+
+int idris_proc_search(_str &proc_name, bool find_first)
+{
+  int status=0;
+  if (find_first) {
+    if (proc_name:=='')
+      proc_name = _clex_identifier_re();
+    _str cases[];
+    // if first is upper it might be data-constructor, hence with leading spaces
+    cases[0] = '^\c{'proc_name'}[ \t]*\:';
+    cases[1] = '^record[ \t]+\c{'proc_name'}\b';
+    cases[2] = '^[ \t]+constructor[ \t]+\c{'proc_name'}';
+    cases[3] = '^data[ \t]+\c{'proc_name'}[ \t]*\:';
+    status = search(join(cases, '|'), '@rh');
+  } else
+    status = repeat_search();
+  if (status)
+    return status;
+
+  VS_TAG_BROWSE_INFO cm;
+  if (length(get_match_text(0)))
+    tag_init_tag_browse_info(cm, get_match_text(0), "", SE_TAG_TYPE_PROTO);
+  else if (length(get_match_text(1)))
+    tag_init_tag_browse_info(cm, get_match_text(1), "", SE_TAG_TYPE_STRUCT);
+  else if (length(get_match_text(2)))
+    tag_init_tag_browse_info(cm, get_match_text(2), "", SE_TAG_TYPE_CONSTRUCTORPROTO);
+  else if (length(get_match_text(3)))
+    tag_init_tag_browse_info(cm, get_match_text(3), "", SE_TAG_TYPE_TYPEDEF);
+  else
+    return 1;
+  proc_name = tag_compose_tag_browse_info(cm);
+  return 0;
+}

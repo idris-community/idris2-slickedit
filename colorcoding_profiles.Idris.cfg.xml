@@ -1,13 +1,14 @@
 <options>
 	<profile n="colorcoding_profiles.Idris" version="2">
-		<p n="idchars" v="a-zA-Z_$ 0-9"/>
+		<p n="idchars" v="a-zA-Z_$ 0-9'"/>
 		<p n="case_sensitive" v="1"/>
 		<p n="mn_flags" v="digit_float digit_int dot_float"/>
 		<p n="comment,--"><attrs color_to_eol="comment"/></p>
 		<p n="comment,{-"><attrs end="-}" flags="multiline"/></p>
-		<p n="function,^:v"><attrs start_col="1" flags="regex"/></p>
+		<p n="function,^:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
 		<p n="inherit" v="(None)"/>
 		<p n="k,case"/>
+		<p n="k,constructor"/>
 		<p n="k,data"/>
 		<p n="k,do"/>
 		<p n="k,else"/>
@@ -17,10 +18,14 @@
 		<p n="k,in"/>
 		<p n="k,Int"/>
 		<p n="k,Integer"/>
+		<p n="k,impossible"/>
 		<p n="k,let"/>
 		<p n="k,module"/>
+		<p n="k,namespace"/>
 		<p n="k,of"/>
+		<p n="k,private"/>
 		<p n="k,public"/>
+		<p n="k,record"/>
 		<p n="k,then"/>
 		<p n="k,Type"/>
 		<p n="k,where"/>
@@ -76,6 +81,7 @@
 		<p n="lib,Right"/>
 		<p n="lib,S"/>
 		<p n="lib,String"/>
+		<p n="lib,Show"/>
 		<p n="lib,trim"/>
 		<p n="lib,True"/>
 		<p n="lib,unpack"/>
@@ -96,7 +102,7 @@
 		<p n="op,&lt;="/>
 		<p n="op,&lt;-"/>
 		<p n="op,&lt;"/>
-		<p n="pp,%name"/>
+		<p n="pp,^%:v"><attrs start_col="1" flags="regex"/></p>
 		<p n="pu,="/>
 		<p n="pu,|"/>
 		<p n="pu,,"/>

@@ -21,7 +21,7 @@
 						<Property PropertyTemplate="LangInsertRealIndent" ActualValue="False" DisplayValue="Off"/>
 						<Property PropertyTemplate="LangBackspaceAtBeginning" ActualValue="False" DisplayValue="Off"/>
 						<Property PropertyTemplate="LangBeginEndPairs" ActualValue=""/>
-						<Property PropertyTemplate="LangWordChars" ActualValue="A-Za-z0-9_$"/>
+						<Property PropertyTemplate="LangWordChars" ActualValue="A-Za-z0-9_$'"/>
 						<Property PropertyTemplate="LangIndentStyle" ActualValue="1" DisplayValue="Auto"/>
 						<Property PropertyTemplate="LangDiffColumns" ActualValue="Off ( )"/>
 					</Dialog>
