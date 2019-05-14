@@ -96,6 +96,7 @@
 		<p n="lib,True"/>
 		<p n="lib,unpack"/>
 		<p n="lib,Vect"/>
+		<p n="lib,Void"/>
 		<p n="lib,writeFile"/>
 		<p n="lib,WriteTruncate"/>
 		<p n="lib,Yes"/>
