@@ -8,6 +8,7 @@
 		<p n="function,^:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
 		<p n="inherit" v="(None)"/>
 		<p n="k,case"/>
+		<p n="k,Char"/>
 		<p n="k,constructor"/>
 		<p n="k,data"/>
 		<p n="k,do"/>
@@ -16,6 +17,9 @@
 		<p n="k,if"/>
 		<p n="k,import"/>
 		<p n="k,in"/>
+		<p n="k,infix"/>
+		<p n="k,infixl"/>
+		<p n="k,infixr"/>
 		<p n="k,Int"/>
 		<p n="k,Integer"/>
 		<p n="k,impossible"/>
@@ -26,6 +30,8 @@
 		<p n="k,private"/>
 		<p n="k,public"/>
 		<p n="k,record"/>
+		<p n="k,rewrite"/>
+		<p n="k,String"/>
 		<p n="k,then"/>
 		<p n="k,Type"/>
 		<p n="k,where"/>
@@ -36,7 +42,9 @@
 		<p n="lib,Cast"/>
 		<p n="lib,closeFile"/>
 		<p n="lib,Data"/>
+		<p n="lib,Dec"/>
 		<p n="lib,DecEq"/>
+		<p n="lib,decEq"/>
 		<p n="lib,Either"/>
 		<p n="lib,Eq"/>
 		<p n="lib,EqNat"/>
@@ -62,6 +70,7 @@
 		<p n="lib,Monad"/>
 		<p n="lib,Nat"/>
 		<p n="lib,Nil"/>
+		<p n="lib,No"/>
 		<p n="lib,not"/>
 		<p n="lib,Nothing"/>
 		<p n="lib,openFile"/>
@@ -76,18 +85,20 @@
 		<p n="lib,ReadAppend"/>
 		<p n="lib,ReadWrite"/>
 		<p n="lib,ReadWriteTruncate"/>
+		<p n="lib,Refl"/>
 		<p n="lib,repl"/>
 		<p n="lib,replWith"/>
 		<p n="lib,Right"/>
 		<p n="lib,S"/>
-		<p n="lib,String"/>
 		<p n="lib,Show"/>
+		<p n="lib,sym"/>
 		<p n="lib,trim"/>
 		<p n="lib,True"/>
 		<p n="lib,unpack"/>
 		<p n="lib,Vect"/>
 		<p n="lib,writeFile"/>
 		<p n="lib,WriteTruncate"/>
+		<p n="lib,Yes"/>
 		<p n="lib,Z"/>
 		<p n="op,=="/>
 		<p n="op,-"/>
