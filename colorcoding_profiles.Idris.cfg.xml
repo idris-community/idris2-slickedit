@@ -7,6 +7,7 @@
 		<p n="comment,{-"><attrs end="-}" flags="multiline"/></p>
 		<p n="function,^:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
 		<p n="inherit" v="(None)"/>
+		<p n="k,auto"/>
 		<p n="k,case"/>
 		<p n="k,Char"/>
 		<p n="k,constructor"/>
@@ -36,10 +37,12 @@
 		<p n="k,Type"/>
 		<p n="k,where"/>
 		<p n="k,with"/>
+		<p n="lib,absurd"/>
 		<p n="lib,all"/>
 		<p n="lib,Append"/>
 		<p n="lib,Bool"/>
 		<p n="lib,Cast"/>
+		<p n="lib,Char"/>
 		<p n="lib,closeFile"/>
 		<p n="lib,Data"/>
 		<p n="lib,Dec"/>
@@ -79,6 +82,8 @@
 		<p n="lib,Prelude"/>
 		<p n="lib,printLn"/>
 		<p n="lib,pure"/>
+		<p n="lib,putChar"/>
+		<p n="lib,putCharLn"/>
 		<p n="lib,putStr"/>
 		<p n="lib,putStrLn"/>
 		<p n="lib,Read"/>
@@ -101,6 +106,7 @@
 		<p n="lib,WriteTruncate"/>
 		<p n="lib,Yes"/>
 		<p n="lib,Z"/>
+		<p n="lib,Yes"/>
 		<p n="op,=="/>
 		<p n="op,-"/>
 		<p n="op,::"/>
@@ -127,6 +133,7 @@
 		<p n="pu,{"/>
 		<p n="pu,}"/>
 		<p n="pu,\"/>
+		<p n="pu,$"/>
 		<p n='string,"'><attrs end='"' flags="multiline"/></p>
 		<p n="string,'"><attrs end="'" flags="terminate"/></p>
 	</profile>
