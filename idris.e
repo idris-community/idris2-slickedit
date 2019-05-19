@@ -80,6 +80,7 @@ _command IdrisAddMissingCases() { _idris_cmd_line_word(":am!"); }
 _command IdrisCaseSplit() { _idris_cmd_line_word(":cs!"); }
 _command IdrisMakeCase() { _idris_cmd_line_word(":mc!"); }
 _command IdrisMakeLemma() { _idris_cmd_line_word(":ml!"); }
+_command IdrisMakeWith() { _idris_cmd_line_word(":mw!"); }
 _command IdrisSearchExpression() { _idris_cmd_line_word(":ps!"); }
 
 int idris_proc_search(_str &proc_name, bool find_first)
