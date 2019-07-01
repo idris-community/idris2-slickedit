@@ -6,7 +6,7 @@
 		<p n="comment,|||"><attrs color_to_eol="comment"/></p>
 		<p n="comment,--"><attrs color_to_eol="comment"/></p>
 		<p n="comment,{-"><attrs end="-}" flags="multiline"/></p>
-		<p n="function,^:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
+		<p n="function,^[ \t]*:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
 		<p n="inherit" v="(None)"/>
 		<p n="k,auto"/>
 		<p n="k,case"/>
