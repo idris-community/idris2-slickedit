@@ -3,6 +3,7 @@
 		<p n="idchars" v="a-zA-Z_$ 0-9'"/>
 		<p n="case_sensitive" v="1"/>
 		<p n="mn_flags" v="digit_float digit_int dot_float"/>
+		<p n="comment,|||"><attrs color_to_eol="comment"/></p>
 		<p n="comment,--"><attrs color_to_eol="comment"/></p>
 		<p n="comment,{-"><attrs end="-}" flags="multiline"/></p>
 		<p n="function,^:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
@@ -26,6 +27,7 @@
 		<p n="k,impossible"/>
 		<p n="k,let"/>
 		<p n="k,module"/>
+		<p n="k,mutual"/>
 		<p n="k,namespace"/>
 		<p n="k,of"/>
 		<p n="k,private"/>
@@ -103,12 +105,14 @@
 		<p n="lib,ReadWrite"/>
 		<p n="lib,ReadWriteTruncate"/>
 		<p n="lib,Refl"/>
+		<p n="lib,readFile"/>
 		<p n="lib,repl"/>
 		<p n="lib,replWith"/>
 		<p n="lib,Right"/>
 		<p n="lib,S"/>
 		<p n="lib,shiftL"/>
 		<p n="lib,shiftR"/>
+		<p n="lib,show"/>
 		<p n="lib,Show"/>
 		<p n="lib,Stream"/>
 		<p n="lib,sym"/>
