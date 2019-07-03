@@ -92,9 +92,9 @@ int idris_proc_search(_str &proc_name, bool find_first)
     _str cases[];
     // if first is upper it might be data-constructor, hence with leading spaces
     cases[0] = '^[ \t]*\c{'proc_name'}[ \t]*\:';
-    cases[1] = '^record[ \t]+\c{'proc_name'}\b';
+    cases[1] = '^[ \t]*record[ \t]+\c{'proc_name'}\b';
     cases[2] = '^[ \t]+constructor[ \t]+\c{'proc_name'}';
-    cases[3] = '^data[ \t]+\c{'proc_name'}[ \t]*\:';
+    cases[3] = '^[ \t]*data[ \t]+\c{'proc_name'}[ \t]*\:';
     status = search(join(cases, '|'), '@rh');
   } else
     status = repeat_search();
