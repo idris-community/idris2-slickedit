@@ -5,7 +5,7 @@
 		<p n="mn_flags" v="digit_float digit_int dot_float"/>
 		<p n="comment,|||"><attrs color_to_eol="comment"/></p>
 		<p n="comment,--"><attrs color_to_eol="comment"/></p>
-		<p n="comment,{-"><attrs end="-}" flags="multiline"/></p>
+		<p n="comment,{-"><attrs end="-}" flags="multiline" nest_start="{-" nest_end="-}"/></p>
 		<p n="function,^[ \t]*:v(#= *\:)"><attrs start_col="1" flags="regex"/></p>
 		<p n="inherit" v="(None)"/>
 		<p n="k,auto"/>
@@ -31,12 +31,14 @@
 		<p n="k,namespace"/>
 		<p n="k,of"/>
 		<p n="k,parameters"/>
+		<p n="k,partial"/>
 		<p n="k,private"/>
 		<p n="k,public"/>
 		<p n="k,record"/>
 		<p n="k,rewrite"/>
 		<p n="k,String"/>
 		<p n="k,then"/>
+		<p n="k,total"/>
 		<p n="k,Type"/>
 		<p n="k,where"/>
 		<p n="k,with"/>
@@ -57,9 +59,13 @@
 		<p n="lib,DivByZero"/>
 		<p n="lib,Divides"/>
 		<p n="lib,divides"/>
+		<p n="lib,dropElem"/>
 		<p n="lib,Either"/>
+		<p n="lib,Elem"/>
+		<p n="lib,elem"/>
 		<p n="lib,Eq"/>
 		<p n="lib,EqNat"/>
+		<p n="lib,evalState"/>
 		<p n="lib,exactLength"/>
 		<p n="lib,False"/>
 		<p n="lib,fEOF"/>
@@ -75,9 +81,13 @@
 		<p n="lib,Functor"/>
 		<p n="lib,GenericFileError"/>
 		<p n="lib,getLine"/>
+		<p n="lib,get"/>
+		<p n="lib,Here"/>
+		<p n="lib,index"/>
 		<p n="lib,Inf"/>
 		<p n="lib,IO"/>
 		<p n="lib,isDigit"/>
+		<p n="lib,isElem"/>
 		<p n="lib,iterate"/>
 		<p n="lib,Just"/>
 		<p n="lib,Left"/>
@@ -93,10 +103,15 @@
 		<p n="lib,Nothing"/>
 		<p n="lib,openFile"/>
 		<p n="lib,Ord"/>
+		<p n="lib,Ordering"/>
+		<p n="lib,EQ"/>
+		<p n="lib,LT"/>
+		<p n="lib,GT"/>
 		<p n="lib,PermissionDenied"/>
 		<p n="lib,Prelude"/>
 		<p n="lib,printLn"/>
 		<p n="lib,pure"/>
+		<p n="lib,put"/>
 		<p n="lib,putChar"/>
 		<p n="lib,putCharLn"/>
 		<p n="lib,putStr"/>
@@ -110,17 +125,23 @@
 		<p n="lib,repl"/>
 		<p n="lib,replWith"/>
 		<p n="lib,Right"/>
+		<p n="lib,runState"/>
 		<p n="lib,S"/>
 		<p n="lib,shiftL"/>
 		<p n="lib,shiftR"/>
 		<p n="lib,show"/>
 		<p n="lib,Show"/>
+		<p n="lib,State"/>
 		<p n="lib,Stream"/>
 		<p n="lib,sym"/>
 		<p n="lib,take"/>
+		<p n="lib,There"/>
 		<p n="lib,trim"/>
 		<p n="lib,True"/>
+		<p n="lib,updateAt"/>
 		<p n="lib,unpack"/>
+		<p n="lib,Uninhabited"/>
+		<p n="lib,uninhabited"/>
 		<p n="lib,Vect"/>
 		<p n="lib,Void"/>
 		<p n="lib,writeFile"/>
@@ -142,8 +163,10 @@
 		<p n="op,&lt;-"/>
 		<p n="op,&lt;"/>
 		<p n="pp,^%:v"><attrs start_col="1" flags="regex"/></p>
+		<p n="pu,~"/>
 		<p n="pu,="/>
 		<p n="pu,|"/>
+		<p n="pu,."/>
 		<p n="pu,,"/>
 		<p n="pu,:"/>
 		<p n="pu,?"/>
@@ -155,7 +178,7 @@
 		<p n="pu,}"/>
 		<p n="pu,\"/>
 		<p n="pu,$"/>
-		<p n='string,"'><attrs end='"' flags="multiline"/></p>
+		<p n='string,"'><attrs end='"' flags="multiline" escape_char="\"/></p>
 		<p n="string,'"><attrs end="'" flags="terminate"/></p>
 	</profile>
 </options>
