@@ -32,6 +32,7 @@
         <p n="k,of"/>
         <p n="k,parameters"/>
         <p n="k,partial"/>
+        <p n="k,prefix"/>
         <p n="k,private"/>
         <p n="k,public"/>
         <p n="k,record"/>
@@ -163,6 +164,7 @@
         <p n="op,&lt;-"/>
         <p n="op,&lt;"/>
         <p n="pp,^%:v"><attrs start_col="1" flags="regex"/></p>
+        <p n="pu,!+"><attrs flags="regex"/></p>
         <p n="pu,~"/>
         <p n="pu,="/>
         <p n="pu,|"/>
@@ -178,6 +180,8 @@
         <p n="pu,}"/>
         <p n="pu,\"/>
         <p n="pu,$"/>
+        <p n="pu,#"/>
+        <p n="pu,&amp;"/>
         <p n='string,"'><attrs end='"' flags="multiline" escape_char="\"/></p>
         <p n="string,'"><attrs end="'" flags="terminate"/></p>
     </profile>
