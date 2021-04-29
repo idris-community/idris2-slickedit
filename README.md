@@ -3,6 +3,7 @@ SlickEdit support for Idris2, providing standard editing features
 - Auto Completion
 - Go-To-Definition
 - Syntax Coloring
+
 and Idris2 interactive editing features:
 - Add Definition
 - Add Missing Cases
