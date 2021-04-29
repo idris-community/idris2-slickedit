@@ -1,28 +1,17 @@
-/// SlickEdit module for Idris programming
+/// SlickEdit module for programming in Idris2
 #include "slick.sh"
 #include "tagsdb.sh"
 
-static _str _quote(_str s) {
-  // TODO: escape s
-  return '"' :+ s :+ '"';
-}
-
-static int _run(_str cmd) {
-  if (
-    (auto h =
-       _PipeProcess(cmd, auto hin, auto _, auto __, "")) < 0) {
-    _message_box(
-      "Could not run:\n" :+ cmd :+ "\nerror: " :+ get_message(h),
-      "Error", MB_OK | MB_ICONSTOP);
-    return 1;
-  } else if (_PipeRead(hin, auto s, 0, 0)) {
-    _PipeCloseProcess(h);
-    _message_box(s);
-    return 1;
-  } else if (length(s) > 0)
-    _message_box(s, cmd, MB_OK | MB_ICONNONE);
-  _PipeCloseProcess(h);
-  return 0;
+static int _run(...) {
+  _str args[];
+  for (i=0; i < arg() ; ++i)
+    args[i] = arg(i+1);
+  cmd = join(args, " ");
+  clear_output_window();
+  activate_output();
+  rv := exec_command_to_window(cmd, output_window_text_control());
+  activate_editor();
+  return rv;
 }
 
 static int _idris(...) {
@@ -30,14 +19,23 @@ static int _idris(...) {
   for (i=0; i < arg() ; ++i)
     cmd[i] = arg(i+1);
 
-  return _run("idris --client " :+ _quote(join(cmd, " ")));
+  return _run(
+    "idris2", "--find-ipkg", "--no-color",
+    p_buf_name, "--client",  _quote(join(cmd, " ")));
+}
+
+static _idris_cmd_line_col_word(_str cmd) {
+  if (save())
+    message("Could not save file");
+  else if (_idris(cmd, p_line, p_col, _cur_word()))
+    message("Command failed: " :+ cmd);
+  else
+    revert("1");
 }
 
 static _idris_cmd_line_word(_str cmd) {
   if (save())
     message("Could not save file");
-  else if (_idris(":l", p_buf_name))
-    message("Could not load file in Idris");
   else if (_idris(cmd, p_line, _cur_word()))
     message("Command failed: " :+ cmd);
   else
@@ -47,8 +45,6 @@ static _idris_cmd_line_word(_str cmd) {
 static _idris_cmd_word(_str cmd) {
   if (save())
     message("Could not save file");
-  else if (_idris(":l", p_buf_name))
-    message("Could not load file in Idris");
   else if (_idris(cmd, _cur_word()))
     message("Command failed: " :+ cmd);
   else
@@ -62,7 +58,7 @@ static _str _cur_word() {
 _command IdrisReload() {
   if (save())
     message("Could not save file");
-  else if (_idris(":l", p_buf_name))
+  else if (_idris(":q")) // should really be `--client ''` but can't quite get it to work, so this is ok too
     message("Could not load file in Idris");
   else
     message("This file type-checks correctly");
@@ -77,7 +73,8 @@ _command IdrisTotal() { _idris_cmd_word(":total"); }
 
 _command IdrisAddDefinition() { _idris_cmd_line_word(":ac!"); }
 _command IdrisAddMissingCases() { _idris_cmd_line_word(":am!"); }
-_command IdrisCaseSplit() { _idris_cmd_line_word(":cs!"); }
+_command IdrisCaseSplit() { _idris_cmd_line_col_word(":cs!"); }
+_command IdrisGenDefinition() { _idris_cmd_line_word(":gd!"); }
 _command IdrisMakeCase() { _idris_cmd_line_word(":mc!"); }
 _command IdrisMakeLemma() { _idris_cmd_line_word(":ml!"); }
 _command IdrisMakeWith() { _idris_cmd_line_word(":mw!"); }
