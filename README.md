@@ -1,4 +1,4 @@
-# idris-slickedit
+# Idris2-slickedit
 SlickEdit support for Idris2, providing standard editing features
 - Auto Completion
 - Go-To-Definition
